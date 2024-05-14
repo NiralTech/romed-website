@@ -4,29 +4,29 @@ const Footer = () => {
       <div className="flex justify-between lg:px-72 pl-10 pt-5 bg-black text-white text-sm h-[159px] max-h-full">
         <div className="flex flex-col space-y-2">
           <div className="flex space-x-5">
-            <div className="flex space-x-3">
+            <div className="flex items-center space-x-3 ">
               <img
                 src="https://static.wixstatic.com/media/27400d_7229eed52eb445d9af8b05ae0dfb9b9d~mv2.png/v1/fill/w_33,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/27400d_7229eed52eb445d9af8b05ae0dfb9b9d~mv2.png"
                 alt=""
               />
               <p>www.roshmed.com</p>
             </div>
-            <div className="flex space-x-3">
+            <div className="flex items-center space-x-1">
               <img
                 src="https://static.wixstatic.com/media/27400d_c966b42b64384bc6b7b2dc3bb5d3f252~mv2.png/v1/fill/w_33,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/27400d_c966b42b64384bc6b7b2dc3bb5d3f252~mv2.png"
                 alt=""
               />
-              <p>info@roshmed.com</p>
+              <p>roschmedi@gmail.com</p>
             </div>
-            <div className="flex space-x-3">
+            <div className="flex items-center space-x-1">
               <img
                 src="https://static.wixstatic.com/media/27400d_c84c57a049d14aed9276027ec56095ff~mv2.png/v1/fill/w_33,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/27400d_c84c57a049d14aed9276027ec56095ff~mv2.png"
                 alt=""
               />
-              <p>999999999</p>
+              <p>9663377055 / 9035846814</p>
             </div>
           </div>
-          <div className="flex space-x-5">
+          <div className="flex items-center space-x-5 ">
             <img
               src="https://static.wixstatic.com/media/27400d_53f5b3d709704dd081b7da1d7a0439d3~mv2.png/v1/fill/w_33,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/27400d_53f5b3d709704dd081b7da1d7a0439d3~mv2.png"
               alt=""
@@ -36,14 +36,14 @@ const Footer = () => {
               Korea
             </p>
           </div>
-          <div className="flex space-x-5">
+          <div className="flex items-center space-x-5">
             {/* <img
               src="https://static.wixstatic.com/media/27400d_53f5b3d709704dd081b7da1d7a0439d3~mv2.png/v1/fill/w_33,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/27400d_53f5b3d709704dd081b7da1d7a0439d3~mv2.png"
               alt=""
             /> */}
             <p>Privacy Policy</p>
           </div>
-          <div className="flex space-x-5">
+          <div className="flex items-center space-x-5 ">
             {/* <img
               src="https://static.wixstatic.com/media/27400d_53f5b3d709704dd081b7da1d7a0439d3~mv2.png/v1/fill/w_33,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/27400d_53f5b3d709704dd081b7da1d7a0439d3~mv2.png"
               alt=""
@@ -73,7 +73,11 @@ const Footer = () => {
           />
         </div>
       </div>
-      <img className="fixed bottom-5 right-5 w-14 h-14" src="https://static.wixstatic.com/media/27400d_a1b89019da544633af7956517d82b7e8~mv2.png/v1/fill/w_69,h_69,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/pngimg_com%20-%20whatsapp_PNG22.png" alt="" />
+      <img
+        className="fixed bottom-5 right-5 w-14 h-14"
+        src="https://static.wixstatic.com/media/27400d_a1b89019da544633af7956517d82b7e8~mv2.png/v1/fill/w_69,h_69,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/pngimg_com%20-%20whatsapp_PNG22.png"
+        alt=""
+      />
     </>
   );
 };
