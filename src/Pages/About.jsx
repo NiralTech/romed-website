@@ -7,8 +7,8 @@ function About() {
       <Header />
       <div className="h-full">
         <div className="flex flex-col space-y-5 px-72">
-          <div className="z-30 flex ml-32">
-            <h2 className="flex flex-col justify-center mt-10 mb-10 lg:mt-40 ">
+          <div className="flex ml-32">
+            <h2 className="flex flex-col justify-center mt-10 mb-10 font-semibold lg:mt-40 ">
               ABOUT ROSCH (from IDS)
             </h2>
           </div>
@@ -48,7 +48,7 @@ function About() {
 
         <div className="flex flex-col space-y-5 px-72">
           <div className="z-30 flex mt-5 lg:ml-32">
-            <h2 className="flex flex-col justify-center mt-10 mb-10 ml-40 lg:mt-30 ">
+            <h2 className="flex flex-col justify-center mt-10 mb-10 ml-40 font-semibold lg:mt-30">
               ABOUT US
             </h2>
           </div>
