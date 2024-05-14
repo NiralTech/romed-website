@@ -1,26 +1,52 @@
 // Header.js
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <>
       <header className="fixed top-0 z-0 w-full h-20 bg-black">
         <div className="flex items-center justify-between h-full lg:px-56">
-          <h1 className="text-sm font-bold text-white uppercase lg:text-lg">Roshmed</h1>
+          <h1 className="text-sm font-bold text-white uppercase lg:text-lg">
+            Roshmed
+          </h1>
           <nav className="flex justify-around">
-            <Link to="/" className="link-text">
+            <NavLink
+              to="/"
+              className="link-text"
+              style={({ isActive }) => ({
+                fontWeight: isActive ? "bold" : "normal",
+              })}
+            >
               Home
-            </Link>
-            <Link to="/about" className="link-text">
+            </NavLink>
+            <NavLink
+              to="/about"
+              className="link-text"
+              style={({ isActive }) => ({
+                fontWeight: isActive ? "bold" : "normal",
+              })}
+            >
               About
-            </Link>
-            <Link to="/services" className="link-text">
+            </NavLink>
+            <NavLink
+              to="/services"
+              className="link-text"
+              style={({ isActive }) => ({
+                fontWeight: isActive ? "bold" : "normal",
+              })}
+            >
               Services
-            </Link>
-            <Link to="/contact" className="link-text">
+            </NavLink>
+            <NavLink
+              to="/contact"
+              className="link-text"
+              style={({ isActive }) => ({
+                fontWeight: isActive ? "bold" : "normal",
+              })}
+            >
               Contact
-            </Link>
+            </NavLink>
           </nav>
         </div>
       </header>
