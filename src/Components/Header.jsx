@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <>
-      <header className="bg-black h-20 fixed top-0 w-full z-0">
-        <div className="flex justify-between items-center h-full lg:px-56">
-          <h1 className="text-white font-bold text-lg uppercase">Roshmed</h1>
+      <header className="fixed top-0 z-0 w-full h-20 bg-black">
+        <div className="flex items-center justify-between h-full lg:px-56">
+          <h1 className="text-sm font-bold text-white uppercase lg:text-lg">Roshmed</h1>
           <nav className="flex justify-around">
             <Link to="/" className="link-text">
               Home

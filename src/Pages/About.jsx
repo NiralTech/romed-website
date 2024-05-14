@@ -5,13 +5,9 @@ function About() {
   return (
     <div>
       <Header />
-      <div className="h-full">
-        <div className="flex flex-col space-y-5 px-72">
-          <div className="flex ml-32">
-            <h2 className="flex flex-col justify-center mt-10 mb-10 font-semibold lg:mt-40 ">
-              ABOUT ROSCH (from IDS)
-            </h2>
-          </div>
+      <div className="h-full mt-20">
+        <div className="flex flex-col px-5 space-y-5 lg:px-72">
+          <h2 className="text-center">ABOUT ROSCH (from IDS)</h2>
 
           <div className="flex flex-col space-y-5">
             <p>
@@ -46,13 +42,9 @@ function About() {
           </div>
         </div>
 
-        <div className="flex flex-col space-y-5 px-72">
-          <div className="z-30 flex mt-5 lg:ml-32">
-            <h2 className="flex flex-col justify-center mt-10 mb-10 ml-40 font-semibold lg:mt-30">
-              ABOUT US
-            </h2>
-          </div>
-
+        <div className="flex flex-col px-5 space-y-5 lg:px-72">
+          <h2 className="text-center">ABOUT US</h2>
+    
           <div className="flex flex-col space-y-5">
             <p>
               ROSCH MEDICAL SYSTEM (P) Ltd is pioneer manufacturing medical and
@@ -80,7 +72,7 @@ function About() {
             </p>
           </div>
         </div>
-        <div className="z-40 home-overlay h-96"></div>
+        <div className="z-40 home-overlay lg:h-96"></div>
         <Footer />
       </div>
     </div>
