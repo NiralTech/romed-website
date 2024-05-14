@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Raleway", system-ui, sans-serif;
+  }
+
+  h2 {
+    font-family: "Poiret One";
+    font-size: 40px;
+  }
+}
+
+@layer components {
+  .link-text {
+    @apply text-white text-[16px] font-normal uppercase px-10;
+  }
+
+  .link-text:hover {
+    opacity: 0.5;
+  }
+
+  .home-overlay {
+    background-color: transparent;
+    background-image: linear-gradient(
+      360deg,
+      #000000 0%,
+      rgba(249, 197, 180, 0) 81.30598068237305%
+    );
+  }
+}
