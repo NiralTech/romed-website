@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <>
-      <div className="flex justify-between lg:px-72 pl-10 pt-5 bg-black text-white text-sm h-[159px] max-h-full">
+      <div className="flex justify-between lg:px-72 pl-10 pt-5 bg-black text-white text-sm h-[250px] max-h-full">
         <div className="flex flex-col space-y-2">
           <div className="flex space-x-5">
             <div className="flex items-center space-x-3 ">
@@ -26,15 +26,20 @@ const Footer = () => {
               <p>9663377055 / 9035846814</p>
             </div>
           </div>
-          <div className="flex items-center space-x-5 ">
-            <img
-              src="https://static.wixstatic.com/media/27400d_53f5b3d709704dd081b7da1d7a0439d3~mv2.png/v1/fill/w_33,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/27400d_53f5b3d709704dd081b7da1d7a0439d3~mv2.png"
-              alt=""
-            />
-            <p>
-              #908, SJ Techno Ville, 278, Beotkkot-ro, Geumcheon-gu, Seoul,
-              Korea
-            </p>
+          <div className="flex space-x-5 ">
+            <div  >
+              <img
+                src="https://static.wixstatic.com/media/27400d_53f5b3d709704dd081b7da1d7a0439d3~mv2.png/v1/fill/w_33,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/27400d_53f5b3d709704dd081b7da1d7a0439d3~mv2.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <p>No. 38, Giridhanwa, 60 Feet Main Road,</p>
+              <p>Karnataka Employee D Group Layout, </p>
+              <p> Lingadheeranahalli, Andhrahalli Main Road,</p>
+              <p>Bengaluru, Bengaluru Urban, </p>
+              <p>Karnataka, 560091</p>
+            </div>
           </div>
           <div className="flex items-center space-x-5">
             {/* <img
