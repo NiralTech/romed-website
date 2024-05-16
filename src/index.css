@@ -15,7 +15,7 @@
 
 @layer components {
   .link-text {
-    @apply text-white text-sm lg:text-[16px] font-normal uppercase px-3 lg:px-10;
+    @apply text-white text-[16px] font-normal uppercase px-3 lg:px-10;
   }
 
   .link-text:hover {

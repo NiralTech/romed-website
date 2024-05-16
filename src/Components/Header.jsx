@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <>
       <header className="fixed top-0 z-0 w-full h-20 bg-black">
-        <div className="flex items-center justify-between h-full lg:px-56">
+        <div className="flex flex-col items-center justify-around h-full lg:justify-between lg:px-56 md:flex-row">
           <h1 className="text-sm font-bold text-white uppercase lg:text-lg">
             Roshmed
           </h1>
