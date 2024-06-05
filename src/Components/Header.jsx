@@ -39,7 +39,7 @@ const Header = () => {
             >
               About
             </NavLink>
-            <NavLink
+            {/* <NavLink
               to="/products"
               className="link-text"
               style={({ isActive }) => ({
@@ -47,7 +47,7 @@ const Header = () => {
               })}
             >
               Products
-            </NavLink>
+            </NavLink> */}
             <NavLink
               to="/careers"
               className="link-text"
