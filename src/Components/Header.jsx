@@ -49,6 +49,15 @@ const Header = () => {
               Products
             </NavLink>
             <NavLink
+              to="/careers"
+              className="link-text"
+              style={({ isActive }) => ({
+                fontWeight: isActive ? "bold" : "normal",
+              })}
+            >
+              Join Us
+            </NavLink>
+            <NavLink
               to="/contact"
               className="link-text"
               style={({ isActive }) => ({

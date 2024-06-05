@@ -18,8 +18,14 @@ export default function Contact() {
         <div className="flex-col space-y-5 pt-32 text-link pr-10 pl-10 lg:pl-[55%] flex">
           <form action="" className="flex flex-col">
             <h2 className="mb-4 font-bold uppercase">Contact Us</h2>
-            <input type="text" placeholder="Name" className="input-text" />
             <input
+              required
+              type="text"
+              placeholder="Name"
+              className="input-text"
+            />
+            <input
+              required
               type="email"
               name=""
               id=""
@@ -27,6 +33,7 @@ export default function Contact() {
               className="input-text"
             />
             <textarea
+              required
               name=""
               id=""
               rows="10"

@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         "link": "#2D315E",
+        "light": "#2D312626ff"
       },
       backgroundImage: {
         // 'home-img': "url('assets/home.svg')",

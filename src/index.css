@@ -19,11 +19,11 @@
   }
 
   .input-text {
-    @apply px-4 py-2 mb-4 border-2 rounded-2xl border-link;
+    @apply px-4 py-2 mb-4 border-2 rounded-2xl border-light;
   }
 
   .text-area {
-    @apply px-4 py-2 mb-4 border-2 rounded-2xl border-link;
+    @apply px-4 py-2 mb-4 border-2 rounded-2xl border-light;
   }
 
   .link-text:hover {
