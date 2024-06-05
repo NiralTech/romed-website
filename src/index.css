@@ -18,6 +18,14 @@
     @apply text-link text-[16px] font-normal uppercase px-3 lg:px-10;
   }
 
+  .input-text {
+    @apply px-4 py-2 mb-4 border-2 rounded-2xl border-link;
+  }
+
+  .text-area {
+    @apply px-4 py-2 mb-4 border-2 rounded-2xl border-link;
+  }
+
   .link-text:hover {
     opacity: 0.5;
   }

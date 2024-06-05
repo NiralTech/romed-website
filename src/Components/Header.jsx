@@ -40,13 +40,13 @@ const Header = () => {
               About
             </NavLink>
             <NavLink
-              to="/services"
+              to="/products"
               className="link-text"
               style={({ isActive }) => ({
                 fontWeight: isActive ? "bold" : "normal",
               })}
             >
-              Services
+              Products
             </NavLink>
             <NavLink
               to="/contact"
