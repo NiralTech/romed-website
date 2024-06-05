@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <>
-      <div className="flex flex-col-reverse justify-between max-h-full pt-5 pl-10 text-sm text-white bg-black lg:flex-row lg:px-72">
+      <div className="flex flex-col-reverse justify-between max-h-full pt-5 pl-10 text-sm text-link lg:flex-row lg:px-72">
         <div className="flex flex-col justify-end space-y-5">
           <div className="flex flex-col space-y-2">
             <div className="flex items-center space-x-1 ">

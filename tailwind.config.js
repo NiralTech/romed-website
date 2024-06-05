@@ -4,8 +4,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        "header-brown": "#281d2c",
+        "link": "#2D315E",
       },
+      backgroundImage: {
+        // 'home-img': "url('assets/home.svg')",
+        'about-img': "url('assets/about-us.svg')"
+      }
     },
   },
   plugins: [],
