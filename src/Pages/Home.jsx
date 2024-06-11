@@ -6,16 +6,16 @@ import homeSvg from "../assets/home.svg";
 function Home() {
   return (
     <>
-      <div id="home" className="h-screen bg-contain md:bg-cover">
+      <div id="home" className="bg-home-img bg-scroll bg-cover">
         <Header />
-        <div className="absolute top-0 h-screen -z-10">
+        {/* <div className="absolute top-0 h-screen -z-10">
           <img
             src={homeSvg}
             alt=""
             className="object-cover h-screen lg:h-auto md:w-full"
           />
-        </div>
-        <div className="h-full">
+        </div> */}
+        <div className="h-screen">
           <div className="z-30 h-screen pt-16 lg:h-auto lg:ml-32">
             <h2 className="flex flex-col justify-center ml-10 space-y-5 mt-28 lg:mt-40 lg:ml-40">
               <span className="text-3xl font-semibold tracking-wider lg:text-6xl text-link">
@@ -29,9 +29,8 @@ function Home() {
               </span>
             </h2>
           </div>
-
-          {/* <Footer /> */}
         </div>
+        <Footer />
       </div>
     </>
   );

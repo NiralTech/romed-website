@@ -8,7 +8,7 @@ export default {
         "light": "#2D312626ff"
       },
       backgroundImage: {
-        // 'home-img': "url('assets/home.svg')",
+        'home-img': "url('assets/home.svg')",
         'about-img': "url('assets/about-us.svg')"
       }
     },

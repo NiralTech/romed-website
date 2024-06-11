@@ -2,6 +2,7 @@ import React from "react";
 
 import contactUsSvg from "../assets/contact-us.svg";
 import Header from "../Components/Header";
+import Footer from "../Components/Footer";
 
 export default function Careers() {
   return (
@@ -62,7 +63,7 @@ export default function Careers() {
           </form>
         </div>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
