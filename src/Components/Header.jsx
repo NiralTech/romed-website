@@ -58,7 +58,7 @@ const ProductLinks = () => {
         <div className="pb-6">Products</div>
         <div className=" bg-[#dedee0] space-x-3 p-4 border-link rounded absolute -bottom-30 hidden group-hover:flex group-hover:flex-col md:group-hover:flex-row md:w-[600px] opacity-100 items-center ">
           <div className="flex flex-col">
-            <NavLink className="product-link-text" to={"/pico-premium"}>
+            <NavLink className="product-link-text " to={"/pico-premium"}>
               PICO PREMIUM
             </NavLink>
             <NavLink className="product-link-text">CURELUX</NavLink>
