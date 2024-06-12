@@ -1,6 +1,7 @@
 // Header.js
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
 import logoLabel from "../assets/logo-label.png";
 import logo from "../assets/logo.png";
 
@@ -9,9 +10,6 @@ const Header = () => {
     <>
       <header className="fixed z-0 w-full h-20 top-5 md:top-0">
         <div className="flex flex-col items-center justify-around h-full lg:justify-between lg:px-56 md:flex-row">
-          {/* <h1 className="text-sm font-bold text-black uppercase lg:text-lg">
-            Roshmed
-          </h1> */}
           <div className="flex mb-5 md:mb-0">
             <div className="">
               <img className="h-10 w-50" src={logo} alt="" />
@@ -21,51 +19,11 @@ const Header = () => {
             </div>
           </div>
           <nav className="flex justify-around">
-            <NavLink
-              to="/"
-              className="link-text"
-              style={({ isActive }) => ({
-                fontWeight: isActive ? "bold" : "normal",
-              })}
-            >
-              Home
-            </NavLink>
-            <NavLink
-              to="/about"
-              className="link-text"
-              style={({ isActive }) => ({
-                fontWeight: isActive ? "bold" : "normal",
-              })}
-            >
-              About
-            </NavLink>
-            {/* <NavLink
-              to="/products"
-              className="link-text"
-              style={({ isActive }) => ({
-                fontWeight: isActive ? "bold" : "normal",
-              })}
-            >
-              Products
-            </NavLink> */}
-            <NavLink
-              to="/careers"
-              className="link-text"
-              style={({ isActive }) => ({
-                fontWeight: isActive ? "bold" : "normal",
-              })}
-            >
-              Join Us
-            </NavLink>
-            <NavLink
-              to="/contact"
-              className="link-text"
-              style={({ isActive }) => ({
-                fontWeight: isActive ? "bold" : "normal",
-              })}
-            >
-              Contact
-            </NavLink>
+            <HeaderLink route={"/"} routeDesc={"Home"} />
+            <HeaderLink route={"/about"} routeDesc={"About"} />
+            <ProductLinks />
+            <HeaderLink route={"/careers"} routeDesc={"Join Us"} />
+            <HeaderLink route={"/contact"} routeDesc={"Contact"} />
           </nav>
         </div>
       </header>
@@ -74,3 +32,44 @@ const Header = () => {
 };
 
 export default Header;
+
+const HeaderLink = ({ route, routeDesc }) => {
+  return (
+    <NavLink
+      to={route}
+      className="link-text"
+      style={({ isActive }) => ({
+        fontWeight: isActive ? "bold" : "normal",
+      })}
+    >
+      {routeDesc}
+    </NavLink>
+  );
+};
+
+const ProductLinks = () => {
+  return (
+    <>
+      <div className="uppercase cursor-pointer relative group ">
+        <div className="pb-6">Products</div>
+        <div className=" bg-[#dedee0] space-x-3 p-4 border-link rounded absolute -bottom-30 hidden group-hover:flex group-hover:flex-col md:group-hover:flex-row md:w-[600px] opacity-100 items-center ">
+          <div className="flex flex-col">
+            <NavLink className="product-link-text">PICO PREMIUM</NavLink>
+            <NavLink className="product-link-text">CURELUX</NavLink>
+            <NavLink className="product-link-text">TITAN</NavLink>
+          </div>
+          <div className="flex flex-col">
+            <NavLink className="product-link-text">SMI COOL</NavLink>
+            <NavLink className="product-link-text">Q-MAX/Q-MAX PREMIUM</NavLink>
+            <NavLink className="product-link-text">SONOPOINT</NavLink>
+          </div>
+          <div className="flex flex-col">
+            <NavLink className="product-link-text">CRYO-ZET & CRYO-Q</NavLink>
+            <NavLink className="product-link-text">DS-3000E</NavLink>
+            <NavLink className="product-link-text">PT-4000</NavLink>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
