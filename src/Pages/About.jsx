@@ -1,11 +1,11 @@
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
+import Layout from "../Components/Layout";
 import aboutUsSvg from "../assets/about-us.svg";
 
 function About() {
   return (
-    <div>
-      <Header />
+    <Layout>
       <div className="h-screen">
         <div className="md:mt-20">
           <div className="absolute top-0 h-screen -z-10">
@@ -44,8 +44,7 @@ function About() {
           </div>
         </div>
       </div>
-      <Footer />
-    </div>
+    </Layout>
   );
 }
 

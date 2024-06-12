@@ -1,13 +1,11 @@
 import React from "react";
 
 import contactUsSvg from "../assets/contact-us.svg";
-import Header from "../Components/Header";
-import Footer from "../Components/Footer";
+import Layout from "../Components/Layout";
 
 export default function Contact() {
   return (
-    <div>
-      <Header />
+    <Layout>
       <div className="h-screen">
         <div className="md:mt-20">
           <div className="absolute top-0 h-screen -z-10">
@@ -51,7 +49,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <Footer />
-    </div>
+    </Layout>
   );
 }
