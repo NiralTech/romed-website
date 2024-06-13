@@ -6,6 +6,7 @@ import picoFractional from "../assets/pico/PICO PREMIUM Fractional HP.png";
 import picoSecond from "../assets/pico/300-picosecond.png";
 import picoWavelength from "../assets/pico/pico-wavelength.png";
 import picoZoom from "../assets/pico/pico-zoom.png";
+import picoDesc from "../assets/pico/pico-desc.png";
 
 import Layout from "../Components/Layout";
 import ProductSection from "../Components/ProductSection";
@@ -13,7 +14,7 @@ import ProductSection from "../Components/ProductSection";
 export default function PicoPremium() {
   return (
     <Layout>
-      <div className="flex flex-col mt-24 items-center">
+      <div className="flex flex-col mt-24 items-center bg-link text-white">
         <div className="grid  md:grid-cols-2 my-20 md:mx-64">
           <div className="w-[250px] h-[700px] gap-2">
             <img
@@ -128,6 +129,16 @@ export default function PicoPremium() {
             <div className="gap-2">
               <img className="content-center" src={picoZoom} alt="" />
             </div>
+          </div>
+        </div>
+
+        <div className="grid  md:mx-64 my-20 gap-4">
+          <div>
+            <h3 className="text-4xl mb-6 uppercase text-center">Indication</h3>
+          </div>
+
+          <div className="gap-2">
+            <img className="content-center" src={picoDesc} alt="" />
           </div>
         </div>
       </div>

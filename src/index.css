@@ -14,8 +14,8 @@
 }
 
 @layer components {
-  .product-link-text {  
-    @apply hover:text-link text-center text-[16px] font-normal uppercase border my-1 p-2 border-white rounded-lg hover:bg-[#e2cdf9] bg-[#643d94] text-white;
+  .product-link-text {
+    @apply hover:text-link text-center text-[16px] font-normal uppercase border my-1 p-2 border-white rounded-lg hover:bg-white bg-link text-white transition ease-in-out delay-150 duration-300;
   }
   .link-text {
     @apply text-link text-[16px] font-normal uppercase px-3 lg:px-10;

@@ -9,9 +9,9 @@ const Header = () => {
   return (
     <>
       <header className="fixed z-0 w-full h-20 top-5 md:top-0">
-        <div className="flex flex-col items-center justify-around h-full lg:justify-between lg:px-56 md:flex-row">
+        <div className="flex flex-col items-center justify-around h-full lg:justify-between lg:px-56 md:flex-row bg-white">
           <HeaderLogo logo={logo} logoLabel={logoLabel} />
-          <nav className="flex justify-around">
+          <nav className="flex justify-around items-center">
             <HeaderLink route={"/"} routeDesc={"Home"} />
             <HeaderLink route={"/about"} routeDesc={"About"} />
             <ProductLinks />
@@ -54,11 +54,11 @@ const HeaderLink = ({ route, routeDesc }) => {
 const ProductLinks = () => {
   return (
     <>
-      <div className="uppercase cursor-pointer relative group ">
+      <div className="uppercase cursor-pointer relative group pt-6 px-2">
         <div className="pb-6">Products</div>
-        <div className=" bg-[#dedee0] space-x-3 p-4 border-link rounded absolute -bottom-30 hidden group-hover:flex group-hover:flex-col md:group-hover:flex-row md:w-[600px] opacity-100 items-center ">
+        <div className=" bg-white space-x-3 p-4 border-link rounded absolute -bottom-42 -left-64 hidden group-hover:flex group-hover:flex-col md:group-hover:flex-row md:w-[600px] opacity-100 items-center ">
           <div className="flex flex-col">
-            <NavLink className="product-link-text " to={"/pico-premium"}>
+            <NavLink className="product-link-text" to={"/pico-premium"}>
               PICO PREMIUM
             </NavLink>
             <NavLink className="product-link-text">CURELUX</NavLink>
