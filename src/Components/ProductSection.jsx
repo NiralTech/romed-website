@@ -1,5 +1,6 @@
+
 const ProductSection = ({ heading, articles }) => (
-  <section className="flex flex-col items-center justify-start text-left md:w-3/4 mt-10">
+  <section className="flex flex-col items-center justify-start text-left md:w-3/4 mt-10 md:mx-64">
     <h3 className="text-4xl mb-6">{heading}</h3>
     <article className="pl-10">
       {articles.map((article) => (
