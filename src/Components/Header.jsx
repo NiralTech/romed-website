@@ -8,7 +8,7 @@ import logo from "../assets/logo.png";
 const Header = () => {
   return (
     <>
-      <header className="fixed z-0 w-full h-20 top-5 md:top-0">
+      <header className="fixed z-0 w-full h-32 md:h-20 top-0">
         <div className="flex flex-col items-center justify-around h-full lg:justify-between lg:px-56 md:flex-row bg-white">
           <HeaderLogo logo={logo} logoLabel={logoLabel} />
           <nav className="flex justify-around items-center">
@@ -56,7 +56,7 @@ const ProductLinks = () => {
     <>
       <div className="uppercase cursor-pointer relative group pt-6 px-2">
         <div className="pb-6">Products</div>
-        <div className=" bg-white space-x-3 p-4 border-link rounded absolute -bottom-42 -left-64 hidden group-hover:flex group-hover:flex-col md:group-hover:flex-row md:w-[600px] opacity-100 items-center ">
+        <div className=" bg-white space-x-3 p-4 border-primaryrounded absolute -bottom-42 -left-20 md:-left-64 hidden group-hover:flex group-hover:flex-col md:group-hover:flex-row md:w-[600px] opacity-100 items-center ">
           <div className="flex flex-col">
             <NavLink className="product-link-text" to={"/pico-premium"}>
               PICO PREMIUM
