@@ -134,6 +134,42 @@ export default function PicoPremium() {
             <img className="content-center bg-primary" src={picoDesc} alt="" />
           </div>
         </div>
+
+        <div className="grid grid-cols-2 md:mx-6 my-20">
+          <div className="col-span-2">
+            <h3 className="text-accent text-4xl mb-6 uppercase text-center ">
+              Technical Specifications
+            </h3>
+          </div>
+          <div className="tb-col">LASER MEDIUM</div>
+          <div className="tb-col">Nd YAG</div>
+          <div className="tb-col">WAVELENGTHS</div>
+          <div className="tb-col">1064,532,585,595,650,660 nm</div>
+          <div className="tb-col">PULSE ENERGY</div>
+          <div className="flex flex-col space-y-2 tb-col">
+            <span>Max, 500 mJ @1064 nm</span> <span>Max, 250 mJ @532 nm</span>{" "}
+            <span>Max, 150 mJ @585/595 nm Max, 100 mJ @650/660 nm</span>
+          </div>
+          <div className="tb-col">PULSE DURATION</div>
+          <div className="tb-col">300 ps</div>
+          <div className="tb-col">SPOT SIZE</div>
+          <div className="flex flex-col space-y-2 tb-col">
+            <span>2-10 mm @1064/532nm</span>
+            <span>2-3 mm @585/595/650/660 nm</span>
+          </div>
+          <div className="tb-col">REPITITION RATE</div>
+          <div className="flex flex-col space-y-2 tb-col">
+            <span>2-10 mm @1064/532nm</span>
+            <span>2-3 mm @585/595/650/660 nm</span>
+          </div>
+          <div className="tb-col">AIMING BEAM</div>
+          <div className="tb-col">Diode 650 nm</div>
+          <div className="tb-col">HANDPIECES</div>
+          <div className="flex flex-col space-y-2 tb-col">
+            <span>Standard Zoom HP</span>
+            <span>Optional Fractional HP-585/595/650/660 Dye HPs</span>
+          </div>
+        </div>
       </div>
     </Layout>
   );
