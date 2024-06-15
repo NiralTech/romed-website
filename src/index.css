@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Raleway", system-ui, sans-serif;
+  }
+
+  h2 {
+    font-family: "Poiret One";
+    font-size: 40px;
+  }
+}
+
+@layer components {
+  .product-link-text {
+    @apply hover:text-accent w-48 md:w-auto text-center text-[16px] font-normal uppercase border my-1 p-2 border-white rounded hover:bg-white bg-accent text-white transition ease-in-out delay-150 duration-300;
+  }
+  .link-text {
+    @apply text-primary text-[16px] font-normal uppercase px-3 lg:px-10;
+  }
+
+  .input-text {
+    @apply px-4 py-2 mb-4 border-2 rounded-2xl border-light;
+  }
+
+  .text-area {
+    @apply px-4 py-2 mb-4 border-2 rounded-2xl border-light;
+  }
+
+  .tb-col{
+    @apply border p-4 text-center;
+  }
+
+  .link-text:hover {
+    opacity: 0.5;
+  }
+
+}
