@@ -59,7 +59,7 @@ export default function PicoPremium() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1  md:grid-cols-2 md:mx-64 my-20 gap-4 px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:mx-64 my-20 gap-4 px-4">
           <div className="md:col-span-2">
             <h3 className="text-accent text-4xl mb-6 text-center md:text-left uppercase">
               {"Fractional handpiece for non-ablative skin rejuvenation"}

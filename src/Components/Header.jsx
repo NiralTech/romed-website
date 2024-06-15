@@ -61,17 +61,17 @@ const ProductLinks = () => {
             <NavLink className="product-link-text" to={"/pico-premium"}>
               PICO PREMIUM
             </NavLink>
-            <NavLink className="product-link-text">CURELUX</NavLink>
+            <NavLink className="product-link-text" to={"/curelux"}>CURELUX</NavLink>
             <NavLink className="product-link-text">TITAN</NavLink>
           </div>
           <div className="flex flex-col">
-            <NavLink className="product-link-text">SMI COOL</NavLink>
-            <NavLink className="product-link-text">Q-MAX/Q-MAX PREMIUM</NavLink>
-            <NavLink className="product-link-text">SONOPOINT</NavLink>
+            <NavLink className="product-link-text" to={'/smicool'}>SMI COOL</NavLink>
+            <NavLink className="product-link-text" to={'/qmax'}>Q-MAX/Q-MAX PREMIUM</NavLink>
+            <NavLink className="product-link-text" to={'/sonopoint'}>SONOPOINT</NavLink>
           </div>
           <div className="flex flex-col">
-            <NavLink className="product-link-text">CRYO-ZET & CRYO-Q</NavLink>
-            <NavLink className="product-link-text">DS-3000E</NavLink>
+            <NavLink className="product-link-text" to={"/cryotwins"}>CRYO-ZET & CRYO-Q</NavLink>
+            <NavLink className="product-link-text" to={'/ds3000'}>DS-3000E</NavLink>
             <NavLink className="product-link-text">PT-4000</NavLink>
           </div>
         </div>
