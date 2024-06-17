@@ -12,6 +12,8 @@ import CryoTwins from "./Pages/CryoTwins";
 import Qmax from "./Pages/Qmax";
 import Ds3000 from "./Pages/Ds3000";
 import Sonopoint from "./Pages/Sonopoint";
+import Titan from "./Pages/Titan";
+import Pt4000 from "./Pages/Pt4000";
 
 const App = () => {
   return (
@@ -20,7 +22,7 @@ const App = () => {
       <Route path="/about" element={<About />} />
       <Route path="/careers" element={<Careers />} />
       <Route path="/contact" element={<Contact />} />
-      
+
       <Route path="/pico-premium" element={<PicoPremium />} />
       <Route path="/curelux" element={<CureLux />} />
       <Route path="/smicool" element={<SmiCool />} />
@@ -28,7 +30,8 @@ const App = () => {
       <Route path="/qmax" element={<Qmax />} />
       <Route path="/ds3000" element={<Ds3000 />} />
       <Route path="/sonopoint" element={<Sonopoint />} />
-
+      <Route path="/titan" element={<Titan />} />
+      <Route path="/pt4000" element={<Pt4000 />} />
     </Routes>
   );
 };
