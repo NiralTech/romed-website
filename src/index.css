@@ -33,7 +33,7 @@
     @apply border p-4 text-center;
   }
 
-  .link-text:hover {
-    opacity: 0.5;
+  .link-text:hover, button:hover {
+    opacity: 0.75;
   }
 }

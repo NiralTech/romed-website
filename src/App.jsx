@@ -14,6 +14,7 @@ import Ds3000 from "./Pages/Ds3000";
 import Sonopoint from "./Pages/Sonopoint";
 import Titan from "./Pages/Titan";
 import Pt4000 from "./Pages/Pt4000";
+import Consumables from "./Pages/Consumables";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
       <Route path="/about" element={<About />} />
       <Route path="/careers" element={<Careers />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/consumables" element={<Consumables />} />
 
       <Route path="/pico-premium" element={<PicoPremium />} />
       <Route path="/curelux" element={<CureLux />} />
