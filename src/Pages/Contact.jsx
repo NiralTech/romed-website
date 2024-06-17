@@ -15,7 +15,12 @@ export default function Contact() {
           />
         </div>
         <div className="flex-col space-y-5 pt-32 text-primarypr-10 pl-10 lg:pl-[55%] flex">
-          <form action="" className="flex flex-col pr-10">
+          <form
+            action=""
+            className="flex flex-col pr-10"
+            data-netlify-recaptcha="true"
+            data-netlify="true"
+          >
             <h2 className="mb-4 font-bold uppercase">Contact Us</h2>
             <input
               required
