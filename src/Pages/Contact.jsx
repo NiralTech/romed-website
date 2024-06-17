@@ -25,27 +25,31 @@ export default function Contact() {
             <input
               required
               type="text"
+              name="name"
               placeholder="Name"
               className="input-text"
             />
             <input
               required
               type="email"
-              name=""
-              id=""
+              name="email"
               placeholder="Email"
               className="input-text"
             />
             <textarea
               required
-              name=""
-              id=""
+              name="description"
               rows="10"
               placeholder="Description"
               className="text-area"
             ></textarea>
+            <div data-netlify-recaptcha="true"></div>
+
             <div>
-              <button className="px-4 py-2 text-white rounded-full bg-accent">
+              <button
+                type="submit"
+                className="px-4 py-2 text-white rounded-full bg-accent"
+              >
                 Submit
               </button>
             </div>
