@@ -4,7 +4,7 @@ import contactUsSvg from "../assets/contact-us.svg";
 import Layout from "../Components/Layout";
 
 export default function Contact() {
-    return (
+  return (
     <Layout>
       <div className="md:mt-20 h-screen">
         <div className="absolute top-0 h-screen -z-10">
@@ -15,7 +15,13 @@ export default function Contact() {
           />
         </div>
         <div className="flex-col space-y-5 pt-32 text-primarypr-10 pl-10 lg:pl-[55%] flex">
-          <form name="contact" className="flex flex-col pr-10" method="post">
+          <form
+            name="contact"
+            className="flex flex-col pr-10"
+            method="post"
+            data-netlify="true"
+            data-netlify-recaptcha="true"
+          >
             <h2 className="mb-4 font-bold uppercase">Contact Us</h2>
             <input type="hidden" name="form-name" value="contact" />
             <input
