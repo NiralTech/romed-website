@@ -63,40 +63,36 @@
       <h2 className="mb-4 font-bold uppercase">Join Us</h2>
       <input type="hidden" name="form-name" value="careers" />
 
-      <input required type="text" placeholder="Name*" className="input-text" />
+      <input  name="name" required type="text" placeholder="Name*" className="input-text" />
       <input
         required
         type="email"
-        name=""
-        id=""
+        name="email"
         placeholder="Email*"
         className="input-text"
       />
       <input
         required
         type="tel"
-        name=""
-        id=""
+        name="phone"
         placeholder="Phone number*"
         className="input-text"
       />
       <input
         type="file"
-        name=""
-        id=""
+        name="resume"
         placeholder="Resume"
         className="input-text"
       />
       <textarea
-        name=""
-        id=""
+        name="description"
         rows="10"
         placeholder="Description"
         className="text-area"
       ></textarea>
     </form>
     <!-- A little help for the Netlify bots if you're not using a SSG -->
-     
+
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
