@@ -29,7 +29,7 @@ export default function Careers() {
             <input
               required
               type="email"
-              name="emil"
+              name="email"
               placeholder="Email*"
               className="input-text"
             />
