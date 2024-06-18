@@ -52,6 +52,51 @@
       <div data-netlify-recaptcha="true"></div>
     </form>
 
+    <form
+      name="careers"
+      method="post"
+      className="flex flex-col pr-10"
+      netlify
+      netlify-honeypot="bot-field"
+      hidden
+    >
+      <h2 className="mb-4 font-bold uppercase">Join Us</h2>
+      <input type="hidden" name="form-name" value="careers" />
+
+      <input required type="text" placeholder="Name*" className="input-text" />
+      <input
+        required
+        type="email"
+        name=""
+        id=""
+        placeholder="Email*"
+        className="input-text"
+      />
+      <input
+        required
+        type="tel"
+        name=""
+        id=""
+        placeholder="Phone number*"
+        className="input-text"
+      />
+      <input
+        type="file"
+        name=""
+        id=""
+        placeholder="Resume"
+        className="input-text"
+      />
+      <textarea
+        name=""
+        id=""
+        rows="10"
+        placeholder="Description"
+        className="text-area"
+      ></textarea>
+    </form>
+    <!-- A little help for the Netlify bots if you're not using a SSG -->
+     
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

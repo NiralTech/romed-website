@@ -15,8 +15,10 @@ export default function Careers() {
             />
           </div>
         <div className="flex flex-col space-y-5 pt-32 text-primarypr-10 pl-10 lg:pl-[55%]">
-          <form action="" className="flex flex-col pr-10">
+          <form name="careers" method="post" className="flex flex-col pr-10">
             <h2 className="mb-4 font-bold uppercase">Join Us</h2>
+            <input type="hidden" name="form-name" value="careers" />
+
             <input
               required
               type="text"
