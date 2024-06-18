@@ -18,6 +18,81 @@
   </head>
 
   <body>
+    <!-- A little help for the Netlify bots if you're not using a SSG -->
+    <form
+      name="contact"
+      className="flex flex-col pr-10"
+      netlify
+      netlify-honeypot="bot-field"
+      hidden
+    >
+      <h2 className="mb-4 font-bold uppercase">Contact Us</h2>
+      <input type="hidden" name="form-name" value="contact" />
+      <input
+        required
+        type="text"
+        name="name"
+        placeholder="Name"
+        className="input-text"
+      />
+      <input
+        required
+        type="email"
+        name="email"
+        placeholder="Email"
+        className="input-text"
+      />
+      <textarea
+        required
+        name="description"
+        rows="10"
+        placeholder="Description"
+        className="text-area"
+      ></textarea>
+      <div data-netlify-recaptcha="true"></div>
+    </form>
+
+    <form
+      name="careers"
+      method="post"
+      className="flex flex-col pr-10"
+      netlify
+      netlify-honeypot="bot-field"
+      hidden
+    >
+      <h2 className="mb-4 font-bold uppercase">Join Us</h2>
+      <input type="hidden" name="form-name" value="careers" />
+
+      <input  name="name" required type="text" placeholder="Name*" className="input-text" />
+      <input
+        required
+        type="email"
+        name="email"
+        placeholder="Email*"
+        className="input-text"
+      />
+      <input
+        required
+        type="tel"
+        name="phone"
+        placeholder="Phone number*"
+        className="input-text"
+      />
+      <input
+        type="file"
+        name="resume"
+        placeholder="Resume"
+        className="input-text"
+      />
+      <textarea
+        name="description"
+        rows="10"
+        placeholder="Description"
+        className="text-area"
+      ></textarea>
+    </form>
+    <!-- A little help for the Netlify bots if you're not using a SSG -->
+
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

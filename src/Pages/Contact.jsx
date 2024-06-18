@@ -15,32 +15,43 @@ export default function Contact() {
           />
         </div>
         <div className="flex-col space-y-5 pt-32 text-primarypr-10 pl-10 lg:pl-[55%] flex">
-          <form action="" className="flex flex-col pr-10">
+          <form
+            name="contact"
+            className="flex flex-col pr-10"
+            method="post"
+            data-netlify="true"
+            data-netlify-recaptcha="true"
+          >
             <h2 className="mb-4 font-bold uppercase">Contact Us</h2>
+            <input type="hidden" name="form-name" value="contact" />
             <input
               required
               type="text"
+              name="name"
               placeholder="Name"
               className="input-text"
             />
             <input
               required
               type="email"
-              name=""
-              id=""
+              name="email"
               placeholder="Email"
               className="input-text"
             />
             <textarea
               required
-              name=""
-              id=""
+              name="description"
               rows="10"
               placeholder="Description"
               className="text-area"
             ></textarea>
+            <div data-netlify-recaptcha="true"></div>
+
             <div>
-              <button className="px-4 py-2 text-white rounded-full bg-accent">
+              <button
+                type="submit"
+                className="px-4 py-2 text-white rounded-full bg-accent"
+              >
                 Submit
               </button>
             </div>
