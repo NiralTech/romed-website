@@ -83,7 +83,7 @@ const Consumables = () => {
             <p>Meet our consumable product</p>
           </div>
           {consumablesData.map((item) => (
-            <ConsumablesCard {...item} />
+            <ConsumablesCard key={item.titleText} {...item} />
           ))}
         </div>
       </Layout>

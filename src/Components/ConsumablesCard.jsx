@@ -8,8 +8,8 @@ const ConsumablesCard = ({ image, titleText, titleDesc, details }) => (
       <p>{titleDesc}</p>
     </div>
     <div className="group-hover:flex flex-col space-y-2 px-5 md:px-10 items-start justify-around text-white hidden transition-all duration-500 overflow-y-auto">
-      {details.map((detail) => (
-        <p>{detail}</p>
+      {details.map((detail, index) => (
+        <p key={index}>{detail}</p>
       ))}
     </div>
   </div>

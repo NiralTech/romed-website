@@ -18,7 +18,7 @@
     @apply hover:text-accent hover:border-solid border-transparent hover:border-accent w-48 md:w-auto text-center text-[16px] font-normal uppercase border my-1 p-2 border-white rounded hover:bg-white bg-accent text-white transition ease-in-out delay-150 duration-300;
   }
   .link-text {
-    @apply text-primary text-[16px] font-normal uppercase px-3 lg:px-10;
+    @apply text-primary text-[16px] font-normal uppercase px-3 lg:px-9;
   }
 
   .input-text {
