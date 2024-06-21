@@ -1,5 +1,5 @@
-const ConsumablesCard = ({ image, titleText, titleDesc, details }) => (
-  <div className="group rounded-2xl flex flex-col items-center bg-primary py-20 m-4 space-y-20 justify-between h-[600px] md:w-[35%]">
+const ConsumablesCard = ({ image, titleText, titleDesc, details, file }) => (
+  <div className="group rounded-2xl flex flex-col items-center bg-primary py-20 m-4 space-y-20 justify-between h-[700px] md:w-[35%]">
     <div className="h-[70%] group-hover:h-[30%] transition-all duration-500">
       <img src={image} alt="" className="h-full w-full rounded-full bg-white" />
     </div>
@@ -12,6 +12,14 @@ const ConsumablesCard = ({ image, titleText, titleDesc, details }) => (
         <p key={index}>{detail}</p>
       ))}
     </div>
+    <a
+      href={file}
+      download={`${titleText}.pdf`}
+      target="_blank"
+      className="group-hover:flex text-white px-6 py-2 border-2 rounded hidden transition-all duration-500 bg-accent"
+    >
+      Brochure
+    </a>
   </div>
 );
 
