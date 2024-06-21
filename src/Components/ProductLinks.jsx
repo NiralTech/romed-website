@@ -4,8 +4,8 @@ import { NavLink } from "react-router-dom";
 const ProductLinks = () => {
   return (
     <>
-      <div className="uppercase cursor-pointer relative group pt-6 px-2">
-        <div className="pb-6">Products</div>
+      <div className="link-text relative group">
+        <div className="">Products</div>
         <div className=" bg-white space-x-3 p-4 border-primaryrounded absolute -bottom-42 -left-20 md:-left-64 hidden group-hover:flex group-hover:flex-col md:group-hover:flex-row md:w-[600px] opacity-100 items-center ">
           <div className="flex flex-col">
             <NavLink className="product-link-text" to={"/pico-premium"}>

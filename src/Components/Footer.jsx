@@ -36,17 +36,20 @@ const Footer = () => {
 
           <div className="flex space-x-4 items-center">
             <FaLocationDot size={icon_size} />
-            <p className="flex flex-col">
-              <span>No. 38, Giridhanwa, 60 Feet Main Road,</span>
-              <span>Karnataka Employee D Group Layout, </span>
-              <span> Lingadheeranahalli, Andhrahalli Main Road,</span>
-              <span>Bengaluru, Bengaluru Urban, </span>
-              <span>Karnataka, 560091</span>
+            <p className="flex flex-col space-y-1">
+              <span>
+                No. 38, Giridhanwa, 60 Feet Main Road, Karnataka Employee D
+                Group Layout,
+              </span>
+              <span>
+                Lingadheeranahalli, Andhrahalli Main Road, Bengaluru, Bengaluru
+                Urban,Karnataka, 560091
+              </span>
             </p>
           </div>
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center space-x-4">
             <FaShieldHalved />
-            <p>Privacy Policy</p>
+            <p className="pl-1">Privacy Policy</p>
             <a href="https://twitter.com/RoschLasers" target="_blank">
               <FaFacebook size={icon_size} className="cursor-pointer" />
             </a>
