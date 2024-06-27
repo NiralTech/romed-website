@@ -53,7 +53,7 @@ export default function Careers() {
               className="text-area"
             ></textarea>
             <div>
-              <button className="px-4 py-2 text-white rounded-full bg-accent">
+              <button className="button">
                 Submit
               </button>
             </div>

@@ -14,7 +14,7 @@ export default function PicoPremium() {
   return (
     <Layout>
       <div className="flex flex-col mt-24 items-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-6 my-20 md:mx-64 px-4 gap-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 my-20 md:mx-64 px-4 gap-2">
           <div className="w-[250px] h-[700px] gap-2 md:row-span-6 row-start-2">
             <img
               className="content-center h-full w-full"

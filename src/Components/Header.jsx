@@ -42,14 +42,19 @@ const HeaderLogo = ({ logo, logoLabel }) => (
 
 const HeaderLink = ({ route, routeDesc }) => {
   return (
-    <NavLink
-      to={route}
-      className="link-text"
-      style={({ isActive }) => ({
-        fontWeight: isActive ? "bold" : "normal",
-      })}
-    >
-      {routeDesc}
-    </NavLink>
+    <>
+      <div className="flex flex-col group">
+        <div className="mx-10 group-hover:border-solid border-transparent group-hover:border-accent border-t-2 transition-all duration-300 ease-in mb-2"></div>
+        <NavLink
+          to={route}
+          className="link-text"
+          style={({ isActive }) => ({
+            fontWeight: isActive ? "bolder" : "normal",
+          })}
+        >
+          {routeDesc}
+        </NavLink>
+      </div>
+    </>
   );
 };
