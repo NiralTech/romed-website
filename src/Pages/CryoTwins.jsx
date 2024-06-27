@@ -5,8 +5,8 @@ import cryo from "../assets/cryotwins/cryo.jpg";
 const CryoTwins = () => (
   <Layout>
     <div className="flex flex-col mt-24 items-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-4 my-20 md:mx-64 px-4 gap-2">
-        <div className="md:row-span-3 row-start-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 my-20 md:mx-64 px-4 gap-2">
+        <div className="md:row-span-3">
           <img className="content-center h-full w-full" src={cryo} alt="" />
         </div>
         <div className="text-accent mb-6 text-center md:text-left uppercase">

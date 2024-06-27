@@ -48,10 +48,7 @@ export default function Contact() {
             <div data-netlify-recaptcha="true"></div>
 
             <div>
-              <button
-                type="submit"
-                className="px-4 py-2 text-white rounded-full bg-accent"
-              >
+              <button type="submit" className="button">
                 Submit
               </button>
             </div>

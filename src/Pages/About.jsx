@@ -14,8 +14,8 @@ function About() {
             className="object-cover h-full lg:h-auto md:w-full"
           />
         </div>
-        <div className="flex-col space-y-5 pt-32 text-primarypr-10 pl-10 lg:pl-[55%] flex">
-          <p className="md:indent-8">
+        <div className="flex-col space-y-8 pt-32 text-primary pr-10 pl-10 lg:pl-[55%] flex">
+          <p>
             <span className="font-bold">ROSCH MEDICAL SYSTEM (P)</span> Ltd is
             pioneer manufacturing medical and aesthetic lasers for skin and
             aesthetic departments. The company / ROSCH is situated in Bangalore,

@@ -11,14 +11,25 @@
     font-family: "Poiret One";
     font-size: 40px;
   }
+
+  body {
+    font-family: "Raleway";
+    font-weight: 400;
+    color: #2D315E;
+    letter-spacing: 0.05rem;
+  }
+
+  nav > * {
+    font-family: Raleway;
+  }
 }
 
 @layer components {
   .product-link-text {
-    @apply hover:text-accent hover:border-solid border-transparent hover:border-accent w-48 md:w-auto text-center text-[16px] font-normal uppercase border my-1 p-2 border-white rounded hover:bg-white bg-accent text-white transition ease-in-out delay-150 duration-300;
+    @apply hover:text-accent hover:border-solid border-transparent hover:border-accent text-center font-normal uppercase border my-1 p-1 border-white rounded hover:bg-white bg-accent text-white transition ease-in-out delay-150 duration-300 md:w-1/3;
   }
   .link-text {
-    @apply text-primary text-[16px] font-normal uppercase px-3 lg:px-9;
+    @apply text-primary font-normal uppercase px-3 lg:px-8;
   }
 
   .input-text {
@@ -33,7 +44,12 @@
     @apply border p-4 text-center;
   }
 
-  .link-text:hover, button:hover {
+  .link-text:hover,
+  button:hover {
     opacity: 0.75;
+  }
+
+  .button {
+    @apply px-4 py-2 text-white rounded-full bg-accent uppercase;
   }
 }

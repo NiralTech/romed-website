@@ -15,6 +15,7 @@ import Sonopoint from "./Pages/Sonopoint";
 import Titan from "./Pages/Titan";
 import Pt4000 from "./Pages/Pt4000";
 import Consumables from "./Pages/Consumables";
+import Tridi from "./Pages/Tridi";
 
 const App = () => {
   return (
@@ -34,6 +35,7 @@ const App = () => {
       <Route path="/sonopoint" element={<Sonopoint />} />
       <Route path="/titan" element={<Titan />} />
       <Route path="/pt4000" element={<Pt4000 />} />
+      <Route path="/tridi" element={<Tridi />} />
     </Routes>
   );
 };

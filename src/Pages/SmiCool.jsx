@@ -5,29 +5,31 @@ import curelux from "../assets/smicool/smi-cool-1.png";
 const SmiCool = () => (
   <Layout>
     <div className="flex flex-col mt-24 items-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-4 my-20 md:mx-64 px-4 gap-2">
-        <div className="md:row-span-4 row-start-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 my-20 md:mx-64 px-4 gap-2">
+        <div className="md:row-span-2">
           <img className="content-center h-full w-full" src={curelux} alt="" />
         </div>
-        <div className="text-accent mb-6 text-center md:text-left uppercase">
-          <h3 className="text-4xl">SMI Cool</h3>
-          <p className="my-6">Cryolipolysis</p>
+        <div className="flex flex-col space-y-4">
+          <div className="text-accent text-center md:text-left uppercase">
+            <h3 className="text-4xl">SMI Cool</h3>
+            <p className="my-6">Cryolipolysis</p>
+          </div>
+          <p>
+            SMI COOL is a cryolipolysis device designed to redefine the
+            landscape of non-invasive fat removal. Engineered with precision and
+            innovation, SMI COOL offers a great solution for individuals seeking
+            a safe and effective method to sculpt their bodies without surgery.
+          </p>
+          <p>
+            Harnessing the power of controlled cooling technology, this device
+            selectively targets and reduces stubborn fat deposits, providing
+            clients with a non-surgical alternative to traditional liposuction.
+            With its advanced features and user-friendly interface, SMI COOL
+            ensures a comfortable and personalized experience, making it a
+            versatile and reliable choice for both practitioners and clients
+            alike.
+          </p>
         </div>
-        <p>
-          SMI COOL is a cryolipolysis device designed to redefine the landscape
-          of non-invasive fat removal. Engineered with precision and innovation,
-          SMI COOL offers a great solution for individuals seeking a safe and
-          effective method to sculpt their bodies without surgery.
-        </p>
-        <p>
-          Harnessing the power of controlled cooling technology, this device
-          selectively targets and reduces stubborn fat deposits, providing
-          clients with a non-surgical alternative to traditional liposuction.
-          With its advanced features and user-friendly interface, SMI COOL
-          ensures a comfortable and personalized experience, making it a
-          versatile and reliable choice for both practitioners and clients
-          alike.
-        </p>
       </div>
 
       <div className="grid grid-cols-1 my-20 md:mx-64 px-4 gap-2">
