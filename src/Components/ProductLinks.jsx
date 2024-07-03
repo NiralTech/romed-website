@@ -19,8 +19,8 @@ const ProductLinks = () => {
     <>
       <div className="font-normal uppercase px-3 lg:px-8 relative group opacity-100 -mb-2">
         <div className="font-normal">Products</div>
-        <div className="bg-white space-x-3 p-4 border-primary rounded absolute -bottom-42 -left-20 md:-left-64 hidden group-hover:flex group-hover:flex-col md:group-hover:flex-row md:w-[600px]  items-center">
-          <div className="flex flex-col md:flex-row md:flex-wrap">
+        <div className="bg-white space-x-3 w-full border-primary rounded absolute hidden group-hover:flex group-hover:flex-col md:group-hover:flex-row items-center p-2 top-6">
+          <div className="flex flex-col space-y-2">
             {routeMap.map((routeData) => {
               return (
                 <NavItem

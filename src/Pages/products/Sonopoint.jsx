@@ -1,5 +1,3 @@
-import Layout from "@/Components/Layout";
-
 import sonopoint from "@/assets/sonopoint/sonopoint.png";
 import handpiece from "@/assets/sonopoint/handpiece.png";
 import tipHandpiece from "@/assets/sonopoint/tip-handpiece.png";
@@ -8,7 +6,6 @@ import tips2 from "@/assets/sonopoint/tips-2.png";
 import ProductHeading from "@/Components/ProductHeading";
 
 const Sonopoint = () => (
-  <Layout>
     <GradientLayout>
       <ProductHeading
         image={sonopoint}
@@ -146,7 +143,6 @@ const Sonopoint = () => (
         <div className="tb-col">30Kg</div>
       </div>
     </GradientLayout>
-  </Layout>
 );
 
 export default Sonopoint;

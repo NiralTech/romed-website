@@ -1,5 +1,3 @@
-import Layout from "@/Components/Layout";
-
 import pt4000 from "@/assets/pt-4000/pt-4000.png";
 import indication from "@/assets/pt-4000/pt4000-Indication.png";
 import laser from "@/assets/pt-4000/laser-vs-fractional-rf.png";
@@ -9,10 +7,9 @@ import downtime from "@/assets/pt-4000/downtime.png";
 import tip1 from "@/assets/pt-4000/pt-tips.png";
 import tip2 from "@/assets/pt-4000/pt-tips2.png";
 import ProductHeading from "@/Components/ProductHeading";
-import GradientLayout from "./GradientLayout";
+import GradientLayout from "../../Components/GradientLayout";
 
 const Pt4000 = () => (
-  <Layout>
     <GradientLayout>
       <ProductHeading
         image={pt4000}
@@ -190,7 +187,6 @@ const Pt4000 = () => (
         <div className="tb-col">22Kg</div>
       </div>
     </GradientLayout>
-  </Layout>
 );
 
 export default Pt4000;
