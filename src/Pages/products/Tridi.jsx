@@ -1,36 +1,21 @@
-import Layout from "../Components/Layout";
+import Layout from "@/Components/Layout";
+import ProductHeading from "@/Components/ProductHeading";
 
-import curelux from "../assets/tridi/tridi-gui.png";
+import curelux from "@/assets/tridi/tridi-gui.png";
+import GradientLayout from "./GradientLayout";
 
 const Tridi = () => (
   <Layout>
-    <div className="flex flex-col mt-24 items-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 my-20 md:mx-64 px-4 gap-2">
-        <div className="w-96 h-[600px]">
-          <img className="content-center h-full w-full" src={curelux} alt="" />
-        </div>
-        <div className="flex flex-col space-y-6">
-          <div className="text-accent mb-6 text-center md:text-left uppercase">
-            <h3 className="text-4xl">Tridi</h3>
-            <p className="my-6">Diode Laser</p>
-          </div>
-          <p>
-            Tridi is a diode laser that redefines the realm of hair removal with
-            unparalleled effectiveness and efficiency. Engineered for swift and
-            comprehensive results, this advanced device is designed to remove
-            all types of hair from any part of the human body in a remarkably
-            short time
-          </p>
-          <p>
-            Tridi emits laser beams at either 755 nm, 808 nm, or a combination
-            of three wavelengths (755 nm, 808 nm, 1064 nm). Tridi is not only
-            powerful but also delivered with precision, ensuring targeted hair
-            removal with optimal energy levels. Furthermore its exceptional skin
-            cooling system guarantees a painless treatment experience for the
-            patient while enabling the operator to save valuable time.
-          </p>
-        </div>
-      </div>
+    <GradientLayout>
+      <ProductHeading
+        image={curelux}
+        title={"Tridi"}
+        desc={"Diode Laser"}
+        content={[
+          "Tridi is a diode laser that redefines the realm of hair removal with unparalleled effectiveness and efficiency. Engineered for swift and comprehensive results, this advanced device is designed to remove all types of hair from any part of the human body in a remarkably short time",
+          "Tridi emits laser beams at either 755 nm, 808 nm, or a combination of three wavelengths (755 nm, 808 nm, 1064 nm). Tridi is not only powerful but also delivered with precision, ensuring targeted hair removal with optimal energy levels. Furthermore its exceptional skin cooling system guarantees a painless treatment experience for the patient while enabling the operator to save valuable time.",
+        ]}
+      />
 
       <div className="grid grid-cols-1 my-20 md:mx-64 px-4 gap-2">
         <div className="text-accent mb-6 text-center md:text-left uppercase">
@@ -99,7 +84,7 @@ const Tridi = () => (
         <div className="tb-col">Display</div>
         <div className="tb-col">12 Inch multi color touch screen</div>
       </div>
-    </div>
+    </GradientLayout>
   </Layout>
 );
 

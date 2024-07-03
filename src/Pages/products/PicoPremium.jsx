@@ -1,47 +1,39 @@
 import React from "react";
 
-import picoPremium from "../assets/pico/pico-premium.png";
-import picoPulse from "../assets/pico/pico-pulse.png";
-import picoFractional from "../assets/pico/PICO PREMIUM Fractional HP.png";
-import picoSecond from "../assets/pico/300-picosecond.png";
-import picoWavelength from "../assets/pico/pico-wavelength.png";
-import picoZoom from "../assets/pico/pico-zoom.png";
-import picoDesc from "../assets/pico/pico-desc.png";
+import picoPremium from "@/assets/pico/pico-premium.png";
+import picoPulse from "@/assets/pico/pico-pulse.png";
+import picoFractional from "@/assets/pico/PICO PREMIUM Fractional HP.png";
+import picoSecond from "@/assets/pico/300-picosecond.png";
+import picoWavelength from "@/assets/pico/pico-wavelength.png";
+import picoZoom from "@/assets/pico/pico-zoom.png";
+import picoDesc from "@/assets/pico/pico-desc.png";
 
-import Layout from "../Components/Layout";
+import Layout from "@/Components/Layout";
+import ProductHeading from "@/Components/ProductHeading";
+import GradientLayout from "./GradientLayout";
 
 export default function PicoPremium() {
   return (
     <Layout>
-      <div className="flex flex-col mt-24 items-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 my-20 md:mx-64 px-4 gap-2">
-          <div className="w-[250px] h-[700px] gap-2 md:row-span-6 row-start-2">
-            <img
-              className="content-center h-full w-full"
-              src={picoPremium}
-              alt=""
-            />
-          </div>
-          <div className="text-accent mb-6 text-center md:text-left uppercase">
-            <h3 className="text-4xl ">{"Pico Premium"}</h3>
-            <p className="my-6">Picosecond laser</p>
-          </div>
-          <p>
-            Picosecond Laser PICO PREMIUM, a revolutionary picosecond Nd: YAG
+      <GradientLayout>
+        <ProductHeading
+          image={picoPremium}
+          title={"Pico Premium"}
+          desc={"Picosecond laser"}
+          content={[
+            `Picosecond Laser PICO PREMIUM, a revolutionary picosecond Nd: YAG
             laser stands at the forefront of cutting-edge dermatological
             technology. Engineered to deliver unparalleled precision and
             efficacy, this advanced laser system redefines the standard for
             epidermal and dermal pigmented lesions, toning, rejuvenation, and
-            tattoo removal.
-          </p>
-          <p>
-            With its true 300 picosecond pulse duration, 6 different handpieces
+            tattoo removal.`,
+            `With its true 300 picosecond pulse duration, 6 different handpieces
             and wavelengths, PICO PREMIUM sets a new standard in addressing the
             most of challenging cases,providing practitioners with a powerful
             tool to achieve remarkable results across a spectrum of skin types
-            and conditions.
-          </p>
-        </div>
+            and conditions.`,
+          ]}
+        />
 
         <div className="grid grid-cols-1 md:grid-cols-2 md:mx-64 my-20 gap-4 px-4">
           <div className="md:col-span-2">
@@ -170,7 +162,7 @@ export default function PicoPremium() {
             <span>Optional Fractional HP-585/595/650/660 Dye HPs</span>
           </div>
         </div>
-      </div>
+      </GradientLayout>
     </Layout>
   );
 }

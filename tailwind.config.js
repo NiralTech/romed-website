@@ -5,9 +5,10 @@ export default {
     extend: {
       colors: {
         primary: "#2D315E",
-        secondary: '#EFEDFF',
-        accent: '#532b7b',
+        secondary: "#EFEDFF",
+        accent: "#532b7b",
         light: "#2D312626ff",
+        pink_light: "#e2cdf9",
       },
       backgroundImage: {
         "home-img": "url('assets/home.svg')",

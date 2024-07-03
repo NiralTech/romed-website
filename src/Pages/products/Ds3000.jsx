@@ -1,31 +1,27 @@
-import Layout from "../Components/Layout";
+import Layout from "@/Components/Layout";
+import ProductHeading from "@/Components/ProductHeading";
 
-import ds3000 from "../assets/ds3000/ds3000-1.png";
+import ds3000 from "@/assets/ds3000/ds3000-1.png";
+import GradientLayout from "./GradientLayout";
 
 const Ds3000 = () => (
   <Layout>
-    <div className="flex flex-col mt-24 items-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 my-20 md:mx-64 px-4 gap-2">
-        <div className="md:row-span-4 row-start-2">
-          <img className="content-center h-full w-full" src={ds3000} alt="" />
-        </div>
-        <div className="text-accent mb-6 text-center md:text-left uppercase">
-          <h3 className="text-4xl">DS- 3000E</h3>
-          <p className="my-6">Smoke Evacuator</p>
-        </div>
-        <p>
-          DS-3000E are smoke evacuators specifically crafted for laser
+    <GradientLayout>
+      <ProductHeading
+        image={ds3000}
+        title={"DS-3000E"}
+        desc={"Smoke Evacuator"}
+        content={[
+          `DS-3000E are smoke evacuators specifically crafted for laser
           treatments, aiming to eliminate smoke and odours and thereby reduce
-          indoor air contamination during treatment procedures.
-        </p>
-        <p>
-          Their efficient filters, including dust, carbon, ULPA, or HEPA, make
+          indoor air contamination during treatment procedures.`,
+          `Their efficient filters, including dust, carbon, ULPA, or HEPA, make
           it possible to create a bacterium- and virus-free operational
           environment by minimizing the presence of these contaminants in the
           air. Easy to operate and portable, these devices can be conveniently
-          moved to any location within the treatment environment.
-        </p>
-      </div>
+          moved to any location within the treatment environment.`,
+        ]}
+      />
 
       <div className="grid grid-cols-1 my-20 md:mx-64 px-4 gap-2">
         <div className="text-accent mb-6 text-center md:text-left uppercase">
@@ -104,7 +100,7 @@ const Ds3000 = () => (
         <div className="tb-col">BASIC COMPONENTS</div>
         <div className="tb-col">Main body, 3 joint free arm, power cord</div>
       </div>
-    </div>
+    </GradientLayout>
   </Layout>
 );
 

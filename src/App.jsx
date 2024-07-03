@@ -5,17 +5,18 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Careers from "./Pages/Careers";
-import PicoPremium from "./Pages/PicoPremium";
-import CureLux from "./Pages/CureLux";
-import SmiCool from "./Pages/SmiCool";
-import CryoTwins from "./Pages/CryoTwins";
-import Qmax from "./Pages/Qmax";
-import Ds3000 from "./Pages/Ds3000";
-import Sonopoint from "./Pages/Sonopoint";
-import Titan from "./Pages/Titan";
-import Pt4000 from "./Pages/Pt4000";
+import PicoPremium from "./Pages/products/PicoPremium";
+import CureLux from "./Pages/products/CureLux";
+import SmiCool from "./Pages/products/SmiCool";
+import CryoTwins from "./Pages/products/CryoTwins";
+import Qmax from "./Pages/products/Qmax";
+import Ds3000 from "./Pages/products/Ds3000";
+import Sonopoint from "./Pages/products/Sonopoint";
+import Titan from "./Pages/products/Titan";
+import Pt4000 from "./Pages/products/Pt4000";
 import Consumables from "./Pages/Consumables";
-import Tridi from "./Pages/Tridi";
+import Tridi from "./Pages/products/Tridi";
+import Registration from "./Pages/Registration";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
       <Route path="/careers" element={<Careers />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/consumables" element={<Consumables />} />
+      <Route path="/registration" element={<Registration />} />
 
       <Route path="/pico-premium" element={<PicoPremium />} />
       <Route path="/curelux" element={<CureLux />} />

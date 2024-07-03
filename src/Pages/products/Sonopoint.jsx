@@ -1,46 +1,33 @@
-import Layout from "../Components/Layout";
+import Layout from "@/Components/Layout";
 
-import sonopoint from "../assets/sonopoint/sonopoint.png";
-import handpiece from "../assets/sonopoint/handpiece.png";
-import tipHandpiece from "../assets/sonopoint/tip-handpiece.png";
-import tips1 from "../assets/sonopoint/tips-1.png";
-import tips2 from "../assets/sonopoint/tips-2.png";
+import sonopoint from "@/assets/sonopoint/sonopoint.png";
+import handpiece from "@/assets/sonopoint/handpiece.png";
+import tipHandpiece from "@/assets/sonopoint/tip-handpiece.png";
+import tips1 from "@/assets/sonopoint/tips-1.png";
+import tips2 from "@/assets/sonopoint/tips-2.png";
+import ProductHeading from "@/Components/ProductHeading";
 
 const Sonopoint = () => (
   <Layout>
-    <div className="flex flex-col mt-24 items-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 my-20 md:mx-64 px-4 gap-2">
-        <div className="md:row-span-3 row-start-1">
-          <img
-            className="content-center h-full w-full"
-            src={sonopoint}
-            alt=""
-          />
-        </div>
-        <div className="text-accent mb-6 text-center md:text-left uppercase">
-          <h3 className="text-4xl">SONOPOINT</h3>
-          <p className="my-6">HIFU- High Intensity Focused Ultrasound</p>
-        </div>
-        <div className="flex flex-col space-y-10">
-          <p>
-            SONOPOINT is a HIFU device designed for aesthetic purposes, offering
+    <GradientLayout>
+      <ProductHeading
+        image={sonopoint}
+        title={"SONOPOINT"}
+        desc={"HIFU- High Intensity Focused Ultrasound"}
+        content={[
+          `SONOPOINT is a HIFU device designed for aesthetic purposes, offering
             a versatile approach to non-invasive skin rejuvenation. This
             innovative device is equipped with both a standard handpiece and a
             pen-type handpiece, providing practitioners with flexibility and
-            precision to the desired treatment areas.
-          </p>
-          <p>
-            The standard handpiece allows for broad coverage, making it suitable
+            precision to the desired treatment areas.`,
+          `The standard handpiece allows for broad coverage, making it suitable
             for larger facial regions, while the pen-type handpiece offers a
             more detailed and focused application, ideal for intricate facial
-            features.
-          </p>
-          <p>
-            SONOPOINT stimulates collagen production and tightens the skin,
-            resulting in a firmer and more youthful appearance
-          </p>
-        </div>
-      </div>
+            features.`,
+          `SONOPOINT stimulates collagen production and tightens the skin,
+            resulting in a firmer and more youthful appearance`,
+        ]}
+      />
 
       <div className="grid grid-cols-1 my-20 md:mx-64 px-4 gap-2">
         <div className="text-accent mb-6 text-center md:text-left uppercase">
@@ -158,7 +145,7 @@ const Sonopoint = () => (
         <div className="tb-col">WEIGHT</div>
         <div className="tb-col">30Kg</div>
       </div>
-    </div>
+    </GradientLayout>
   </Layout>
 );
 

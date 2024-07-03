@@ -1,7 +1,5 @@
-import Footer from "../Components/Footer";
-import Header from "../Components/Header";
-import Layout from "../Components/Layout";
-import aboutUsSvg from "../assets/about-us.svg";
+import Layout from "@/Components/Layout";
+import aboutUsSvg from "@/assets/about-us.svg";
 
 function About() {
   return (

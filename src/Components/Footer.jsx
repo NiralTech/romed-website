@@ -16,7 +16,7 @@ const Footer = () => {
   const icon_size = "1.5em";
   return (
     <>
-      <div className="flex flex-col md:flex-row justify-left pl-6 md:pl-20 space-x-6 w-full text-sm py-10 mt-10  text-accent">
+      <div className="flex flex-col md:flex-row justify-left pl-6 md:mx-64 md:pl-20 space-x-6 w-full text-sm py-10 mt-10  text-accent">
         <div className="flex flex-col space-y-2 md:space-y-3">
           <div className="flex flex-col md:flex-row space-y-2 md:space-x-4">
             <div className="flex space-x-4 items-center md:items-start md:mt-1">
@@ -70,7 +70,7 @@ const Footer = () => {
         href="https://api.whatsapp.com/send?phone=9663377055"
         target="_blank"
       >
-        <FaWhatsapp size={"3.5em"} className="cursor-pointer text-accent" />
+        <FaWhatsapp size={"3.5em"} className="cursor-pointer text-accent bg-white rounded-full" />
       </a>
     </>
   );

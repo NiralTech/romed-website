@@ -1,21 +1,22 @@
-import ConsumablesCard from "../Components/ConsumablesCard";
-import Layout from "../Components/Layout";
+import ConsumablesCard from "@/Components/ConsumablesCard";
+import Layout from "@/Components/Layout";
 
-import consmetic from "../assets/consumables/cosmetic-container.png";
-import laserDoctor from "../assets/consumables/laser-doctor.png";
-import etre from "../assets/consumables/etre.png";
-import skinDoctor from "../assets/consumables/skin-doctor.png";
-import carbonq from "../assets/consumables/carbonq.png";
-import angela from "../assets/consumables/angela.png";
-import angelaFace from "../assets/consumables/angela-face.png";
+import consmetic from "@/assets/consumables/cosmetic-container.png";
+import laserDoctor from "@/assets/consumables/laser-doctor.png";
+import etre from "@/assets/consumables/etre.png";
+import skinDoctor from "@/assets/consumables/skin-doctor.png";
+import carbonq from "@/assets/consumables/carbonq.png";
+import angela from "@/assets/consumables/angela.png";
+import angelaFace from "@/assets/consumables/angela-face.png";
 
-import lidokaFile from "../assets/consumables/files/lidoka.pdf";
-import laserDoctorFile from "../assets/consumables/files/laserdoctor.pdf";
-import entreFile from "../assets/consumables/files/entre.pdf";
-import skinDoctorFile from "../assets/consumables/files/skindoctor.pdf";
-import carbonqFile from "../assets/consumables/files/carbonq.pdf";
-import angelaBodyFile from "../assets/consumables/files/angelabody.pdf";
-import angelaFacefile from "../assets/consumables/files/angelaface.pdf";
+import lidokaFile from "@/assets/consumables/files/lidoka.pdf";
+import laserDoctorFile from "@/assets/consumables/files/laserdoctor.pdf";
+import entreFile from "@/assets/consumables/files/entre.pdf";
+import skinDoctorFile from "@/assets/consumables/files/skindoctor.pdf";
+import carbonqFile from "@/assets/consumables/files/carbonq.pdf";
+import angelaBodyFile from "@/assets/consumables/files/angelabody.pdf";
+import angelaFacefile from "@/assets/consumables/files/angelaface.pdf";
+import GradientLayout from "./products/GradientLayout";
 
 const Consumables = () => {
   const consumablesData = [
@@ -92,15 +93,17 @@ const Consumables = () => {
   return (
     <>
       <Layout>
-        <div className="mt-32 flex flex-col md:flex-row flex-wrap justify-center space-y-10">
-          <div className="w-full text-center flex flex-col space-y-5">
-            <h3 className="uppercase text-3xl font-bold ">Consumables</h3>
-            <p>Meet our consumable product</p>
+        <GradientLayout>
+          <div className="mt-32 flex flex-col md:flex-row flex-wrap justify-center space-y-10">
+            <div className="w-full text-center flex flex-col space-y-5">
+              <h3 className="uppercase text-3xl font-bold ">Consumables</h3>
+              <p>Meet our consumable product</p>
+            </div>
+            {consumablesData.map((item) => (
+              <ConsumablesCard key={item.titleText} {...item} />
+            ))}
           </div>
-          {consumablesData.map((item) => (
-            <ConsumablesCard key={item.titleText} {...item} />
-          ))}
-        </div>
+        </GradientLayout>
       </Layout>
     </>
   );

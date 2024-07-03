@@ -1,30 +1,20 @@
-import Layout from "../Components/Layout";
+import Layout from "@/Components/Layout";
+import ProductHeading from "@/Components/ProductHeading";
 
-import cryo from "../assets/cryotwins/cryo.jpg";
+import cryo from "@/assets/cryotwins/cryo.jpg";
+import GradientLayout from "./GradientLayout";
 
 const CryoTwins = () => (
   <Layout>
-    <div className="flex flex-col mt-24 items-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 my-20 md:mx-64 px-4 gap-2">
-        <div className="md:row-span-3">
-          <img className="content-center h-full w-full" src={cryo} alt="" />
-        </div>
-        <div className="text-accent mb-6 text-center md:text-left uppercase">
-          <h3 className="text-4xl">CRYO-ZET & CRYO-Q</h3>
-          <p className="my-6">AIR COOLING SYSTEM</p>
-        </div>
-        <p>
-          CRYO-ZET is an air-cooling device designed to be used with lasers
-          during dermatological procedures. It minimizes skin damage through
-          compatibility with various lasers, reduces pain and recovery time, and
-          ensures even skin protection through its advanced cooling
-          capabilities. With the capability to chill the air to a maximum of -35
-          degrees Celsius, it delivers a robust cooling effect both during and
-          after laser treatments. Notably, CRYO-ZET operates without the need
-          for consumables, ensuring cost-effectiveness, simplicity, and
-          convenience in its usage.
-        </p>
-      </div>
+    <GradientLayout>
+      <ProductHeading
+        image={cryo}
+        title={"CRYO-ZET & CRYO-Q"}
+        desc={"AIR COOLING SYSTEM"}
+        content={[
+          "CRYO-ZET is an air-cooling device designed to be used with lasers during dermatological procedures. It minimizes skin damage through compatibility with various lasers, reduces pain and recovery time, and ensures even skin protection through its advanced cooling capabilities. With the capability to chill the air to a maximum of -35 degrees Celsius, it delivers a robust cooling effect both during and after laser treatments. Notably, CRYO-ZET operates without the need for consumables, ensuring cost-effectiveness, simplicity, and           convenience in its usage.",
+        ]}
+      />
 
       <div className="grid grid-cols-1 my-20 md:mx-64 px-4 gap-2">
         <div className="text-accent mb-6 text-center md:text-left uppercase">
@@ -64,7 +54,7 @@ const CryoTwins = () => (
         <div className="tb-col">WEIGHT</div>
         <div className="tb-col">50 kg</div>
       </div>
-    </div>
+    </GradientLayout>
   </Layout>
 );
 
