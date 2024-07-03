@@ -1,7 +1,7 @@
 import React from "react";
 
-import contactUsSvg from "../assets/contact-us.svg";
-import Layout from "../Components/Layout";
+import contactUsSvg from "@/assets/contact-us.svg";
+import Layout from "@/Components/Layout";
 
 export default function Careers() {
   return (

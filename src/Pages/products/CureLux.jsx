@@ -1,32 +1,28 @@
-import Layout from "../Components/Layout";
+import Layout from "@/Components/Layout";
+import ProductHeading from "@/Components/ProductHeading";
 
-import curelux from "../assets/curelux/curelux.png";
+import curelux from "@/assets/curelux/curelux.png";
+import GradientLayout from "./GradientLayout";
 
 const CureLux = () => (
   <Layout>
-    <div className="flex flex-col mt-24 items-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-4 my-20 md:mx-64 px-4 gap-2">
-        <div className="md:row-span-4 row-start-2">
-          <img className="content-center h-full w-full" src={curelux} alt="" />
-        </div>
-        <div className="text-accent mb-6 text-center md:text-left uppercase">
-          <h3 className="text-4xl">CureLux</h3>
-          <p className="my-6">Light Emitting Diode</p>
-        </div>
-        <p>
-          CURELUX is an advanced light-emitting diode (LED) device to elevate
+    <GradientLayout>
+      <ProductHeading
+        image={curelux}
+        title={"CureLux"}
+        desc={"Light Emitting Diode"}
+        content={[
+          `CURELUX is an advanced light-emitting diode (LED) device to elevate
           skincare through the strategic integration of four distinct
           wavelengths: 660 nm, 415 nm, 830 nm, and 585 nm. This cutting-edge
           technology harnesses the power of phototherapy, offering a
-          multifaceted approach to address a wide spectrum of skin concerns.
-        </p>
-        <p>
-          From promoting skin rejuvenation and stimulating hair regrowth to
+          multifaceted approach to address a wide spectrum of skin concerns.`,
+          `From promoting skin rejuvenation and stimulating hair regrowth to
           actively managing acne, accelerating wound healing, and catering to
           various dermatological indications, CURELUX emerges as a comprehensive
-          tool for holistic skincare.
-        </p>
-      </div>
+          tool for holistic skincare.`,
+        ]}
+      />
 
       <div className="grid grid-cols-1 my-20 md:mx-64 px-4 gap-2">
         <div className="text-accent mb-6 text-center md:text-left uppercase">
@@ -83,7 +79,7 @@ const CureLux = () => (
 
         <div className="tb-col">10000 H</div>
       </div>
-    </div>
+    </GradientLayout>
   </Layout>
 );
 

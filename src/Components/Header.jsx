@@ -2,8 +2,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-import logoLabel from "../assets/logo-label.png";
-import logo from "../assets/logo.png";
+import logoLabel from "@/assets/logo-label.png";
+import logo from "@/assets/logo.png";
 
 import ProductLinks from "./ProductLinks";
 

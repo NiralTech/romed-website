@@ -1,41 +1,37 @@
-import Layout from "../Components/Layout";
+import Layout from "@/Components/Layout";
 
-import qmaxPic from "../assets/qmax/qmax.png";
-import indication from "../assets/qmax/qmax-indication.png";
-import beam3 from "../assets/qmax/beam-profile-3.png";
-import beam2 from "../assets/qmax/beam-profile-2.png";
-import beam1 from "../assets/qmax/beam-profile-1.png";
-import singlePulse from "../assets/qmax/single-pulse.png";
-import ptpPulse from "../assets/qmax/ptp-pulse.png";
-import longPulse from "../assets/qmax/long-pulse-1064.png";
-import handPieces from "../assets/qmax/handpieces.png";
+import qmaxPic from "@/assets/qmax/qmax.png";
+import indication from "@/assets/qmax/qmax-indication.png";
+import beam3 from "@/assets/qmax/beam-profile-3.png";
+import beam2 from "@/assets/qmax/beam-profile-2.png";
+import beam1 from "@/assets/qmax/beam-profile-1.png";
+import singlePulse from "@/assets/qmax/single-pulse.png";
+import ptpPulse from "@/assets/qmax/ptp-pulse.png";
+import longPulse from "@/assets/qmax/long-pulse-1064.png";
+import handPieces from "@/assets/qmax/handpieces.png";
+import ProductHeading from "@/Components/ProductHeading";
+import GradientLayout from "./GradientLayout";
 
 const Qmax = () => (
   <Layout>
-    <div className="flex flex-col mt-24 items-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-3 my-20 md:mx-64 px-4 gap-2">
-        <div className="md:row-span-3 row-start-1">
-          <img className="content-center h-full w-full" src={qmaxPic} alt="" />
-        </div>
-        <div className="text-accent mb-6 text-center md:text-left uppercase">
-          <h3 className="text-4xl">Q-MAX / Q-MAX PREMIUM</h3>
-          <p className="my-6">Q-switched & Long-pulsed Nd: YAG Laser</p>
-        </div>
-        <p>
-          Q-MAX ensures significant power output for pigment procedures,
+    <GradientLayout>
+      <ProductHeading
+        image={qmaxPic}
+        title={"Q-MAX / Q-MAX PREMIUM"}
+        desc={"Q-switched & Long-pulsed Nd: YAG Laser"}
+        content={[
+          `Q-MAX ensures significant power output for pigment procedures,
           maintaining consistent performance across a wide treatment area. The
           even distribution of energy improves safety and effectiveness,
           reducing the likelihood of skin thermal injury while selectively
           removing pigments in the dermis. Moreover, the PTP mode is designed to
           offer a more comfortable experience with reduced pain and faster
-          regeneration compared to the single-pulse mode.
-        </p>
-        <p>
-          In addition to the advantages of Q-MAX, the enhanced Q-MAX PREMIUM
+          regeneration compared to the single-pulse mode.`,
+          `In addition to the advantages of Q-MAX, the enhanced Q-MAX PREMIUM
           model includes an additional long-pulsed mode that can be used for
-          both hair removal and the treatment of vascular lesions.
-        </p>
-      </div>
+          both hair removal and the treatment of vascular lesions.`,
+        ]}
+      />
 
       <div className="grid grid-cols-1 md:grid-cols-2 my-20 md:mx-64 px-4 gap-2">
         <div className="md:col-span-2">
@@ -50,7 +46,7 @@ const Qmax = () => (
           </p>
           <div className="flex mt-10">
             <div>
-              <img className="h-full w-full bg-primary" src={beam1} alt="" />
+              <img className="h-full w-full   " src={beam1} alt="" />
             </div>
             <div>
               <img className="h-full w-full bg-primary" src={beam2} alt="" />
@@ -167,7 +163,7 @@ const Qmax = () => (
         <div className="tb-col">WEIGHT</div>
         <div className="tb-col">50 kg</div>
       </div>
-    </div>
+    </GradientLayout>
   </Layout>
 );
 

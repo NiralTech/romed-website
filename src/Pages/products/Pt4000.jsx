@@ -1,45 +1,37 @@
-import Layout from "../Components/Layout";
+import Layout from "@/Components/Layout";
 
-import pt4000 from "../assets/pt-4000/pt-4000.png";
-import indication from "../assets/pt-4000/pt4000-Indication.png";
-import laser from "../assets/pt-4000/laser-vs-fractional-rf.png";
-import penetration from "../assets/pt-4000/penetration-depth.png";
-import noninsulated from "../assets/pt-4000/non-insulated vs insulated.png";
-import downtime from "../assets/pt-4000/downtime.png";
-import tip1 from "../assets/pt-4000/pt-tips.png";
-import tip2 from "../assets/pt-4000/pt-tips2.png";
+import pt4000 from "@/assets/pt-4000/pt-4000.png";
+import indication from "@/assets/pt-4000/pt4000-Indication.png";
+import laser from "@/assets/pt-4000/laser-vs-fractional-rf.png";
+import penetration from "@/assets/pt-4000/penetration-depth.png";
+import noninsulated from "@/assets/pt-4000/non-insulated vs insulated.png";
+import downtime from "@/assets/pt-4000/downtime.png";
+import tip1 from "@/assets/pt-4000/pt-tips.png";
+import tip2 from "@/assets/pt-4000/pt-tips2.png";
+import ProductHeading from "@/Components/ProductHeading";
+import GradientLayout from "./GradientLayout";
 
 const Pt4000 = () => (
   <Layout>
-    <div className="flex flex-col mt-24 items-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 my-20 md:mx-64 px-4 gap-2">
-        <div className="md:row-span-4 row-start-2">
-          <img className="content-center h-full w-full" src={pt4000} alt="" />
-        </div>
-        <div className="text-accent mb-6 text-center md:text-left uppercase">
-          <h3 className="text-4xl">PT-4000</h3>
-          <p className="my-6">RF NEEDLE</p>
-        </div>
-        <div className="flex flex-col space-y-5">
-          <p>
-            PT-4000 is a groundbreaking fractional radiofrequency micro-needle
+    <GradientLayout>
+      <ProductHeading
+        image={pt4000}
+        title={"PT-4000"}
+        desc={"RF NEEDLE"}
+        content={[
+          `PT-4000 is a groundbreaking fractional radiofrequency micro-needle
             device, innovatively designed to overcome the drawbacks associated
             with traditional lasers that can potentially damage the skin surface
-            as they invariably penetrate through it.
-          </p>
-          <p>
-            Differentiating itself, PT-4000 employs insulated micro-needles that
+            as they invariably penetrate through it.`,
+          `Differentiating itself, PT-4000 employs insulated micro-needles that
             penetrate the dermis directly, delivering optimal high-frequency
-            energy without damaging the skin surface.
-          </p>
-          <p>
-            This process forms coagulated columns, fostering healing and
+            energy without damaging the skin surface.`,
+          `This process forms coagulated columns, fostering healing and
             generating ample collagen layers. The RF capability ensures a
             controlled energy delivery per shot ensuring consistent ideal
-            clinical results.
-          </p>
-        </div>
-      </div>
+            clinical results.`,
+        ]}
+      />
 
       <div className="grid grid-cols-1 md:grid-cols-2 my-20 md:mx-64 px-4 gap-2">
         <div className="text-accent mb-6 text-center md:text-left uppercase">
@@ -143,7 +135,7 @@ const Pt4000 = () => (
           <img className="bg-primary" src={tip1} alt="" />
         </div>
         <div className="">
-          <img className="bg-primary" src={tip2} alt=""  />
+          <img className="bg-primary" src={tip2} alt="" />
         </div>
       </div>
       <div className="grid  md:mx-64 my-20 gap-4">
@@ -197,7 +189,7 @@ const Pt4000 = () => (
         <div className="tb-col">WEIGHT</div>
         <div className="tb-col">22Kg</div>
       </div>
-    </div>
+    </GradientLayout>
   </Layout>
 );
 

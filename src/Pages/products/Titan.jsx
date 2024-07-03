@@ -1,42 +1,34 @@
-import Layout from "../Components/Layout";
+import Layout from "../../Components/Layout";
 
-import titan from "../assets/titan/titan.png";
-import mirobram from "../assets/titan/mirobeam.png";
-import gynecology from "../assets/titan/gynecology.png";
-import indication from "../assets/titan/titan-indication.png";
+import titan from "@/assets/titan/titan.png";
+import mirobram from "@/assets/titan/mirobeam.png";
+import gynecology from "@/assets/titan/gynecology.png";
+import indication from "@/assets/titan/titan-indication.png";
+import ProductHeading from "../../Components/ProductHeading";
+import GradientLayout from "./GradientLayout";
 
 const Titan = () => (
   <Layout>
-    <div className="flex flex-col mt-24 items-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 my-20 md:mx-64 px-4 gap-2">
-        <div className="md:row-span-2">
-          <img className="content-center h-full w-full" src={titan} alt="" />
-        </div>
-        <div className="text-accent mb-6 text-center md:text-left uppercase">
-          <h3 className="text-4xl">Titan</h3>
-          <p className="my-6">Fractional CO2</p>
-        </div>
-        <div className="flex flex-col space-y-4">
-          <p>
-            TITAN, the pinnacle of CO2 fractional laser technology by ROSCH is a
+    <GradientLayout>
+      <ProductHeading
+        image={titan}
+        title={"TITAN"}
+        desc={"Fractional CO2"}
+        content={[
+          `TITAN, the pinnacle of CO2 fractional laser technology by ROSCH is a
             groundbreaking system designed to address a diverse range of
-            concerns.
-          </p>
-          <p>
-            With its innovative approach and precision engineering, TITAN
+            concerns.`,
+          `With its innovative approach and precision engineering, TITAN
             redefines the landscape of mainly 6 different aesthetic and medical
             applications, offering unparalleled efficacy and
             versatility—aesthetic surgical, aesthetic fractional, general
-            fractional, vaginal, dental, and ENT.
-          </p>
-          <p>
-            For each application, SMAXEL is equipped with features that optimize
+            fractional, vaginal, dental, and ENT.`,
+          `For each application, SMAXEL is equipped with features that optimize
             treatment outcomes, and its prowess lies in its ability to minimize
             downtime while maximizing results. TITAN is truly a go-to choose for
-            aesthetic and medical practitioners.
-          </p>
-        </div>
-      </div>
+            aesthetic and medical practitioners.`,
+        ]}
+      />
 
       <div className="grid grid-cols-1 md:grid-cols-2 my-20 md:mx-64 px-4 gap-2">
         <div className="text-accent mb-6 text-center md:text-left uppercase col-span-2">
@@ -94,7 +86,7 @@ const Titan = () => (
         </div>
 
         <div className="gap-2">
-          <img className="content-center bg-primary" src={indication} alt="" />
+          <img className="content-center" src={indication} alt="" />
         </div>
       </div>
 
@@ -174,7 +166,7 @@ const Titan = () => (
         <div className="tb-col">REPEAT TIME</div>
         <div className="tb-col">Off, 0.5, 1, 1.5, 2, 2.5 ms</div>
       </div>
-    </div>
+    </GradientLayout>
   </Layout>
 );
 
