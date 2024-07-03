@@ -16,6 +16,7 @@ import skinDoctorFile from "@/assets/consumables/files/skindoctor.pdf";
 import carbonqFile from "@/assets/consumables/files/carbonq.pdf";
 import angelaBodyFile from "@/assets/consumables/files/angelabody.pdf";
 import angelaFacefile from "@/assets/consumables/files/angelaface.pdf";
+import GradientLayout from "./products/GradientLayout";
 
 const Consumables = () => {
   const consumablesData = [
@@ -92,15 +93,17 @@ const Consumables = () => {
   return (
     <>
       <Layout>
-        <div className="mt-32 flex flex-col md:flex-row flex-wrap justify-center space-y-10">
-          <div className="w-full text-center flex flex-col space-y-5">
-            <h3 className="uppercase text-3xl font-bold ">Consumables</h3>
-            <p>Meet our consumable product</p>
+        <GradientLayout>
+          <div className="mt-32 flex flex-col md:flex-row flex-wrap justify-center space-y-10">
+            <div className="w-full text-center flex flex-col space-y-5">
+              <h3 className="uppercase text-3xl font-bold ">Consumables</h3>
+              <p>Meet our consumable product</p>
+            </div>
+            {consumablesData.map((item) => (
+              <ConsumablesCard key={item.titleText} {...item} />
+            ))}
           </div>
-          {consumablesData.map((item) => (
-            <ConsumablesCard key={item.titleText} {...item} />
-          ))}
-        </div>
+        </GradientLayout>
       </Layout>
     </>
   );
