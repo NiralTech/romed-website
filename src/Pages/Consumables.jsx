@@ -1,5 +1,4 @@
 import ConsumablesCard from "@/Components/ConsumablesCard";
-import Layout from "@/Components/Layout";
 
 import consmetic from "@/assets/consumables/cosmetic-container.png";
 import laserDoctor from "@/assets/consumables/laser-doctor.png";
