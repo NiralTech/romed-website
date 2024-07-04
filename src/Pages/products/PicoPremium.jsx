@@ -35,7 +35,7 @@ export default function PicoPremium() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 md:mx-64 my-20 gap-4 px-4">
         <div className="md:col-span-2">
-          <h3 className="text-accent text-4xl mb-6 text-center md:text-left uppercase">
+          <h3 className="text-white text-4xl mb-6 text-center md:text-left uppercase">
             {"Proved 300 picosecond pulse duration"}
           </h3>
         </div>
@@ -51,7 +51,7 @@ export default function PicoPremium() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 md:mx-64 my-20 gap-4 px-4">
         <div className="md:col-span-2">
-          <h3 className="text-accent text-4xl mb-6 text-center md:text-left uppercase">
+          <h3 className="text-white text-4xl mb-6 text-center md:text-left uppercase">
             {"Fractional handpiece for non-ablative skin rejuvenation"}
           </h3>
         </div>
@@ -87,7 +87,7 @@ export default function PicoPremium() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 md:mx-64 my-20 gap-4">
         <div className="md:col-span-2">
-          <h3 className="text-accent text-4xl mb-6 uppercase">
+          <h3 className="text-white text-4xl mb-6 uppercase">
             Various wavelengths and handpieces
           </h3>
         </div>
@@ -115,19 +115,19 @@ export default function PicoPremium() {
 
       <div className="grid  md:mx-64 my-20 gap-4">
         <div>
-          <h3 className="text-accent text-4xl mb-6 uppercase text-center">
+          <h3 className="text-white text-4xl mb-6 uppercase text-center">
             Indication
           </h3>
         </div>
 
         <div className="gap-2">
-          <img className="content-center bg-primary" src={picoDesc} alt="" />
+          <img className="content-center" src={picoDesc} alt="" />
         </div>
       </div>
 
       <div className="grid grid-cols-2 md:mx-6 my-20">
         <div className="col-span-2">
-          <h3 className="text-accent text-4xl mb-6 uppercase text-center ">
+          <h3 className="text-white text-4xl mb-6 uppercase text-center ">
             Technical Specifications
           </h3>
         </div>

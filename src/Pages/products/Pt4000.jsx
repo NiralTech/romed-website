@@ -129,27 +129,27 @@ const Pt4000 = () => (
           <h3 className="text-4xl">Tips for different clinical goals</h3>
         </div>
         <div className="">
-          <img className="bg-primary" src={tip1} alt="" />
+          <img src={tip1} alt="" />
         </div>
         <div className="">
-          <img className="bg-primary" src={tip2} alt="" />
+          <img src={tip2} alt="" />
         </div>
       </div>
       <div className="grid  md:mx-64 my-20 gap-4">
         <div>
-          <h3 className="text-accent text-4xl mb-6 uppercase text-center">
+          <h3 className="text-white text-4xl mb-6 uppercase text-center">
             Indication
           </h3>
         </div>
 
         <div className="gap-2">
-          <img className="content-center bg-primary" src={indication} alt="" />
+          <img className="content-center" src={indication} alt="" />
         </div>
       </div>
 
       <div className="grid grid-cols-2 md:mx-6 my-20">
         <div className="col-span-2">
-          <h3 className="text-accent text-4xl mb-6 uppercase text-center ">
+          <h3 className="text-white text-4xl mb-6 uppercase text-center ">
             Technical Specifications
           </h3>
         </div>

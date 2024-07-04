@@ -1,6 +1,7 @@
 import ProductHeading from "@/Components/ProductHeading";
 
 import curelux from "@/assets/curelux/curelux.png";
+import indication from "@/assets/curelux/indication.png";
 import GradientLayout from "../../Components/GradientLayout";
 
 const CureLux = () => (
@@ -23,7 +24,7 @@ const CureLux = () => (
     />
 
     <div className="grid grid-cols-1 my-20 md:mx-64 px-4 gap-2">
-      <div className="text-accent mb-6 text-center md:text-left uppercase">
+      <div className="mb-6 text-center md:text-left uppercase">
         <h3 className="text-4xl">Feature</h3>
       </div>
       <ul className=" pl-10">
@@ -54,9 +55,21 @@ const CureLux = () => (
       </ul>
     </div>
 
+    <div className="grid  md:mx-64 my-20 gap-4">
+      <div>
+        <h3 className="text-white text-4xl mb-6 uppercase text-center">
+          Indication
+        </h3>
+      </div>
+
+      <div className="gap-2">
+        <img className="content-center" src={indication} alt="" />
+      </div>
+    </div>
+
     <div className="grid grid-cols-2 md:mx-6 my-20">
       <div className="col-span-2">
-        <h3 className="text-accent text-4xl mb-6 uppercase text-center ">
+        <h3 className="text-white text-4xl mb-6 uppercase text-center ">
           Technical Specifications
         </h3>
       </div>

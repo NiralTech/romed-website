@@ -32,7 +32,7 @@ const Qmax = () => (
 
     <div className="grid grid-cols-1 md:grid-cols-2 my-20 md:mx-64 px-4 gap-2">
       <div className="md:col-span-2">
-        <h3 className="text-accent text-4xl mb-6 uppercase  ">
+        <h3 className="text-white text-4xl mb-6 uppercase  ">
           FLAT TOP-HAT BEAM PROFILE
         </h3>
       </div>
@@ -46,23 +46,23 @@ const Qmax = () => (
             <img className="h-full w-full   " src={beam1} alt="" />
           </div>
           <div>
-            <img className="h-full w-full bg-primary" src={beam2} alt="" />
+            <img className="h-full w-full" src={beam2} alt="" />
           </div>
         </div>
       </div>
       <div className="md:ml-20">
-        <img className="h-full w-full bg-primary" src={beam3} alt="" />
+        <img className="h-full w-full" src={beam3} alt="" />
       </div>
     </div>
 
     <div className="grid grid-cols-1 md:grid-cols-2 my-20 md:mx-64 px-4 gap-x-10 gap-y-4">
       <div className="md:col-span-2">
-        <h3 className="text-accent text-4xl mb-6 uppercase  ">
+        <h3 className="text-white text-4xl mb-6 uppercase  ">
           Dual-pulse with less skin damage (PTP)
         </h3>
       </div>
       <div>
-        <img className="h-full w-full bg-primary" src={singlePulse} alt="" />
+        <img className="h-full w-full " src={singlePulse} alt="" />
       </div>
       <p>
         By employing the PTP mode, both Q10 and Q10 PREMIUM have the capability
@@ -77,7 +77,7 @@ const Qmax = () => (
         outcomes.
       </p>
       <div>
-        <img className="h-full w-full bg-primary" src={ptpPulse} alt="" />
+        <img className="h-full w-full " src={ptpPulse} alt="" />
       </div>
       <div className="flex flex-col ">
         <p>
@@ -99,7 +99,7 @@ const Qmax = () => (
 
     <div className="grid grid-cols-1 md:grid-cols-2 my-20 md:mx-64 px-4 gap-x-10 gap-y-4">
       <div className="md:col-span-2">
-        <h3 className="text-accent text-4xl mb-6 uppercase  ">
+        <h3 className="text-white text-4xl mb-6 uppercase  ">
           1064 nm long-pulsed mode for more indications
         </h3>
       </div>
@@ -109,18 +109,18 @@ const Qmax = () => (
         removal and the treatment of vascular lesions.
       </p>
       <div>
-        <img className="h-full w-full bg-primary" src={longPulse} alt="" />
+        <img className="h-full w-full" src={longPulse} alt="" />
       </div>
     </div>
 
     <div className="grid grid-cols-1 md:grid-cols-2 my-20 md:mx-64 px-4 gap-x-10 gap-y-4">
       <div className="md:col-span-2">
-        <h3 className="text-accent text-4xl mb-6 uppercase  md:text-right ">
+        <h3 className="text-white text-4xl mb-6 uppercase  md:text-right ">
           Various handpieces
         </h3>
       </div>
       <div>
-        <img className="h-full w-full bg-primary" src={handPieces} alt="" />
+        <img className="h-full w-full" src={handPieces} alt="" />
       </div>
       <p>
         With the diverse selection of handpieces provided by Q-MAX and Q-MAX
@@ -131,19 +131,19 @@ const Qmax = () => (
 
     <div className="grid  md:mx-64 my-20 gap-4">
       <div>
-        <h3 className="text-accent text-4xl mb-6 uppercase text-center">
+        <h3 className="text-white text-4xl mb-6 uppercase text-center">
           Indication
         </h3>
       </div>
 
       <div className="gap-2">
-        <img className="content-center bg-primary" src={indication} alt="" />
+        <img className="content-center" src={indication} alt="" />
       </div>
     </div>
 
     <div className="grid grid-cols-2 md:mx-6 my-20">
       <div className="col-span-2">
-        <h3 className="text-accent text-4xl mb-6 uppercase text-center ">
+        <h3 className="text-white text-4xl mb-6 uppercase text-center ">
           Technical Specifications
         </h3>
       </div>

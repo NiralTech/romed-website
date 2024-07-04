@@ -73,7 +73,7 @@ const Titan = () => (
 
     <div className="grid  md:mx-64 my-20 gap-4">
       <div>
-        <h3 className="text-accent text-4xl mb-6 uppercase text-center">
+        <h3 className="text-white text-4xl mb-6 uppercase text-center">
           Indication
         </h3>
       </div>
@@ -85,7 +85,7 @@ const Titan = () => (
 
     <div className="grid grid-cols-2 md:mx-6 my-20">
       <div className="col-span-2">
-        <h3 className="text-accent text-4xl mb-6 uppercase text-center ">
+        <h3 className="text-white text-4xl mb-6 uppercase text-center ">
           Technical Specifications
         </h3>
       </div>
@@ -101,7 +101,7 @@ const Titan = () => (
       <div className="tb-col">AIMING BEAM</div>
       <div className="tb-col">Diode 650nm</div>
       <div className="tb-col">COOLING</div>
-      <div className="tb-col">Water</div>
+      <div className="tb-col">Air</div>
       <div className="tb-col">DIMENSION (W’L’H)</div>
       <div className="tb-col">440mm(W) X 480mm(L) X 1055mm(H)</div>
       <div className="tb-col">WEIGHT</div>

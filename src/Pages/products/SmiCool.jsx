@@ -25,7 +25,7 @@ const SmiCool = () => (
     />
 
     <div className="grid grid-cols-1 my-20 md:mx-64 px-4 gap-2">
-      <div className="text-accent mb-6 text-center md:text-left uppercase">
+      <div className="mb-6 text-center md:text-left uppercase">
         <h3 className="text-4xl">Feature</h3>
       </div>
       <ul className=" pl-10">
@@ -66,7 +66,7 @@ const SmiCool = () => (
 
     <div className="grid grid-cols-2 md:mx-6 my-20">
       <div className="col-span-2">
-        <h3 className="text-accent text-4xl mb-6 uppercase text-center ">
+        <h3 className="text-white text-4xl mb-6 uppercase text-center ">
           Technical Specifications
         </h3>
       </div>
