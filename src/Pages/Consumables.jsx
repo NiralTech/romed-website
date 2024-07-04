@@ -92,19 +92,17 @@ const Consumables = () => {
 
   return (
     <>
-      <Layout>
-        <GradientLayout>
-          <div className="mt-32 flex flex-col md:flex-row flex-wrap justify-center space-y-10">
-            <div className="w-full text-center flex flex-col space-y-5">
-              <h3 className="uppercase text-3xl font-bold ">Consumables</h3>
-              <p>Meet our consumable product</p>
-            </div>
-            {consumablesData.map((item) => (
-              <ConsumablesCard key={item.titleText} {...item} />
-            ))}
+      <GradientLayout>
+        <div className="mt-32 flex flex-col md:flex-row flex-wrap justify-center space-y-10">
+          <div className="w-full text-center flex flex-col space-y-5">
+            <h3 className="uppercase text-3xl font-bold ">Consumables</h3>
+            <p>Meet our consumable product</p>
           </div>
-        </GradientLayout>
-      </Layout>
+          {consumablesData.map((item) => (
+            <ConsumablesCard key={item.titleText} {...item} />
+          ))}
+        </div>
+      </GradientLayout>
     </>
   );
 };
