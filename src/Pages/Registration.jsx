@@ -1,7 +1,7 @@
 import React from "react";
 
 import Layout from "@/Components/Layout";
-import GradientLayout from "./products/GradientLayout";
+import GradientLayout from "../Components/GradientLayout";
 
 const Registration = () => (
   <Layout>

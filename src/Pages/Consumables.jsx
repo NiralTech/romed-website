@@ -16,7 +16,7 @@ import skinDoctorFile from "@/assets/consumables/files/skindoctor.pdf";
 import carbonqFile from "@/assets/consumables/files/carbonq.pdf";
 import angelaBodyFile from "@/assets/consumables/files/angelabody.pdf";
 import angelaFacefile from "@/assets/consumables/files/angelaface.pdf";
-import GradientLayout from "./products/GradientLayout";
+import GradientLayout from "../Components/GradientLayout";
 
 const Consumables = () => {
   const consumablesData = [
