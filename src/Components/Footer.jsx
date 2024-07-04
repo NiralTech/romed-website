@@ -5,7 +5,6 @@ import {
   FaCopyright,
   FaShieldHalved,
   FaFacebook,
-  FaYoutube,
   FaInstagram,
   FaWhatsapp,
   FaTwitter,
