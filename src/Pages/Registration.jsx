@@ -1,13 +1,15 @@
 import React from "react";
 
-import Layout from "@/Components/Layout";
 import GradientLayout from "../Components/GradientLayout";
 
-const Registration = () => (
-  <Layout>
+const Registration = () => {
+  const speciality = [
+    
+  ]
+  return (
     <GradientLayout>
       <div className="md:mt-20 h-screen md:w-1/2">
-        <div className="flex-col space-y-5 pt-4 text-primary flex">
+        <div className="flex-col space-y-5 pt-4 text-white flex">
           <form
             name="registration"
             className="flex flex-col"
@@ -50,13 +52,17 @@ const Registration = () => (
               />
             </div>
             <div className="flex flex-row space-x-2">
-              <input
+              <select
                 required
-                type="text"
                 name="speciality"
                 placeholder="Speciality"
-                className="input-text w-1/2"
-              />
+                className="input-text w-1/2 text-primary"
+              >
+                <option disabled selected>
+                  Specialty
+                </option>
+                <option value={"Non-Physician"}>Non-Physician</option>
+              </select>
               <input
                 required
                 type="tel"
@@ -98,7 +104,7 @@ const Registration = () => (
         </div>
       </div>
     </GradientLayout>
-  </Layout>
-);
+  );
+};
 
 export default Registration;

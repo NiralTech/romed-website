@@ -17,7 +17,7 @@ const ProductHeading = ({ image, title, desc, content }) => (
 
       <div>
         <a href="/registration" className="button">
-          details
+          Brochure
         </a>
       </div>
     </div>

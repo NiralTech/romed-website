@@ -8,7 +8,7 @@ function Home() {
   return (
     <div id="home" className="">
       <Layout>
-        <Carousel className="" showArrows={true} autoPlay={true} useKeyboardArrows={true} transitionTime={500}  showThumbs={false} showStatus={false}>
+        <Carousel className="" showArrows={true} useKeyboardArrows={true} transitionTime={500}  showThumbs={false} showStatus={false}>
           <div className="h-screen bg-home-img bg-scroll bg-cover mt-p4">
             <div className="h-screen pt-16 lg:h-auto lg:ml-32">
               <h2
