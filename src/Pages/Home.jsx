@@ -2,6 +2,7 @@ import Layout from "@/Components/Layout";
 
 import picoPremium from "@/assets/pico/pico-premium.png";
 import sonopoint from "@/assets/sonopoint/sonopoint.png";
+import "./carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 
 function Home() {
