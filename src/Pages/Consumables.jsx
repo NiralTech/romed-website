@@ -92,7 +92,7 @@ const Consumables = () => {
   return (
     <>
       <GradientLayout>
-        <div className="mt-32 flex flex-col md:flex-row flex-wrap justify-center space-y-10">
+        <div className="mt-32 flex flex-col md:flex-row flex-wrap justify-center space-y-10 mb-5">
           <div className="w-full text-center flex flex-col space-y-5">
             <h3 className="uppercase text-3xl font-bold ">Consumables</h3>
             <p>Meet our consumable product</p>

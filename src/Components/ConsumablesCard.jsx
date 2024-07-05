@@ -1,10 +1,10 @@
 const ConsumablesCard = ({ image, titleText, titleDesc, details, file }) => (
-  <div className="group rounded-2xl flex flex-col items-center bg-secondary py-20 m-4 space-y-10 justify-around h-[700px] md:w-[35%] ">
-    <div className="h-[70%] group-hover:h-[30%] transition-all duration-500">
+  <div className="group flex flex-col items-center bg-secondary pb-6 m-4 space-y-10 justify-between h-[550px] md:w-[33%] shadow-accent shadow-lg">
+    <div className="h-[70%] w-full group-hover:h-[30%] transition-all duration-500">
       <img
         src={image}
         alt=""
-        className="h-full w-full rounded-full bg-white border border-accent bg-gradient-to-tr from-accent to-white"
+        className="h-full w-full bg-white border border-accent bg-gradient-to-tr from-accent to- object-contain"
       />
     </div>
     <div className="flex flex-col items-center text-secondary group-hover:hidden transition-all duration-500">
