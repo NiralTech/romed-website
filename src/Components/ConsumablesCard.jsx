@@ -1,5 +1,5 @@
 const ConsumablesCard = ({ image, titleText, titleDesc, details, file }) => (
-  <div className="group flex flex-col items-center bg-secondary pb-6 m-4 space-y-10 justify-between h-[550px] md:w-[33%] shadow-accent shadow-lg">
+  <div className="group flex flex-col items-center bg-secondary pb-6 m-4 space-y-10 justify-between h-[600px]  md:w-[33%] shadow-accent shadow-lg">
     <div className="h-[70%] w-full group-hover:h-[30%] transition-all duration-500">
       <img
         src={image}
@@ -11,21 +11,23 @@ const ConsumablesCard = ({ image, titleText, titleDesc, details, file }) => (
       <h4 className="text-3xl font-bold uppercase text-primary">{titleText}</h4>
       <p className="text-primary">{titleDesc}</p>
     </div>
-    <div className="group-hover:flex flex-col space-y-2 px-5 md:px-10 items-start justify-around text-white hidden transition-all duration-500 overflow-y-auto">
-      {details.map((detail, index) => (
-        <p className="text-primary" key={index}>
-          {detail}
-        </p>
-      ))}
+    <div className="group-hover:flex flex-col space-y-5 px-5 items-start justify-around text-white hidden transition-all duration-500">
+      <div className="flex flex-col space-y-3">
+        {details.map((detail, index) => (
+          <p className="text-primary" key={index}>
+            {detail}
+          </p>
+        ))}
+      </div>
+      <a
+        href={file}
+        download={`${titleText}.pdf`}
+        target="_blank"
+        className="group-hover:flex rounded hidden transition-all duration-500 button mx-auto"
+      >
+        Brochure
+      </a>
     </div>
-    <a
-      href={file}
-      download={`${titleText}.pdf`}
-      target="_blank"
-      className="group-hover:flex rounded hidden transition-all duration-500 button"
-    >
-      Brochure
-    </a>
   </div>
 );
 
