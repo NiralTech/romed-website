@@ -1,7 +1,5 @@
 import Layout from "@/Components/Layout";
 
-import picoPremium from "@/assets/product-1-slide.svg";
-import sonopoint from "@/assets/sonopoint/sonopoint.png";
 import { Carousel } from "react-responsive-carousel";
 
 function Home() {
