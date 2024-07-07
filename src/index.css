@@ -26,7 +26,7 @@
 
 @layer components {
   .product-link-text {
-    @apply hover:text-accent hover:border-solid border-transparent hover:border-accent text-center font-normal uppercase border my-1 p-1 border-white rounded hover:bg-white bg-accent text-white transition ease-in-out delay-150 duration-300;
+    @apply hover:text-white hover:border-solid border-transparent hover:border-accent text-center font-normal uppercase border my-1 p-1 border-white rounded hover:bg-accent bg-white text-accent transition ease-in-out delay-150 duration-300;
   }
   .link-text {
     @apply text-primary font-normal uppercase px-3 lg:px-8;

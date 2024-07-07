@@ -28,7 +28,7 @@ const Titan = () => (
     />
 
     <div className="grid grid-cols-1 md:grid-cols-2 my-20 md:mx-64 px-4 gap-2">
-      <div className="text-accent mb-6 text-center md:text-left uppercase col-span-2">
+      <div className=" mb-6 text-center md:text-left uppercase col-span-2">
         <h3 className="text-4xl">Scar treatment by fractional CO2 laser</h3>
       </div>
       <div>
@@ -46,7 +46,7 @@ const Titan = () => (
     </div>
 
     <div className="grid grid-cols-1 md:grid-cols-2 my-20 md:mx-64 px-4 gap-2">
-      <div className="text-accent mb-6 text-center md:text-left uppercase md:col-span-2">
+      <div className=" mb-6 text-center md:text-left uppercase md:col-span-2">
         <h3 className="text-4xl">
           Vaginal rejuvenation by fractional CO2 laser
         </h3>

@@ -38,7 +38,14 @@ const ProductLinks = () => {
 };
 
 const NavItem = ({ title, route }) => (
-  <NavLink className="product-link-text" to={route}>
+  <NavLink
+    className="product-link-text"
+    to={route}
+    style={({ isActive }) => ({
+      backgroundColor: !isActive ? "white" : "#532b7b",
+      color: !isActive ? "#2D315E" : "white",
+    })}
+  >
     {title}
   </NavLink>
 );
