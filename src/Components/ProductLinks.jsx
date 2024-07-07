@@ -18,7 +18,7 @@ const ProductLinks = () => {
   return (
     <>
       <div className="font-normal uppercase px-3 lg:px-8 relative group opacity-100 -mb-2">
-        <div className="font-normal">Products</div>
+        <div className="font-normal cursor-pointer">Products</div>
         <div className="bg-white space-x-3 w-full border-primary rounded absolute hidden group-hover:flex group-hover:flex-col md:group-hover:flex-row items-center p-2 top-6">
           <div className="flex flex-col space-y-2">
             {routeMap.map((routeData) => {
