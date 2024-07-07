@@ -14,6 +14,8 @@ export default {
         "home-img": "url('assets/home.svg')",
         "background-img": "url('assets/background.svg')",
         "about-img": "url('assets/about-us.svg')",
+        "slide-1": "url('assets/product-1-slide.svg')",
+        "slide-2": "url('assets/product-2-slide.svg')"
       },
     },
   },

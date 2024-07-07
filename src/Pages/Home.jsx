@@ -1,6 +1,6 @@
 import Layout from "@/Components/Layout";
 
-import picoPremium from "@/assets/pico/pico-premium.png";
+import picoPremium from "@/assets/product-1-slide.svg";
 import sonopoint from "@/assets/sonopoint/sonopoint.png";
 import { Carousel } from "react-responsive-carousel";
 
@@ -8,7 +8,14 @@ function Home() {
   return (
     <div id="home" className="">
       <Layout>
-        <Carousel className="" showArrows={true} useKeyboardArrows={true} transitionTime={500}  showThumbs={false} showStatus={false}>
+        <Carousel
+          className=""
+          showArrows={true}
+          useKeyboardArrows={true}
+          transitionTime={500}
+          showThumbs={false}
+          showStatus={false}
+        >
           <div className="h-screen bg-home-img bg-scroll bg-cover mt-p4">
             <div className="h-screen pt-16 lg:h-auto lg:ml-32">
               <h2
@@ -26,22 +33,8 @@ function Home() {
               </h2>
             </div>
           </div>
-          <div className="h-screen from-primary to-black bg-gradient-to-tr bg-scroll bg-cover pt-24">
-            <h3 className="text-white text-3xl pt-5 uppercase">Pico Premium</h3>
-            <img
-              src={picoPremium}
-              alt=""
-              className="w-full h-3/4 object-contain"
-            />
-          </div>
-          <div className="h-screen  from-primary to-black bg-gradient-to-tr bg-scroll bg-cover pt-24">
-            <h3 className="text-white text-3xl pt-5 uppercase">Sonopoint</h3>
-            <img
-              src={sonopoint}
-              alt=""
-              className="w-full h-3/4 object-contain"
-            />
-          </div>
+          <div className="h-screen bg-slide-1 bg-scroll bg-cover mt-p4"></div>
+          <div className="h-screen bg-slide-2 bg-scroll bg-cover mt-p4"></div>
         </Carousel>
       </Layout>
     </div>
