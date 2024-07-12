@@ -38,7 +38,7 @@ const Qmax = () => (
       </div>
       <div>
         <p>
-          Both Q10 and Q10 PREMIUM exhibit a flat top-hat beam profile, ensuring
+          Both Q-MAX and Q-MAX PREMIUM exhibit a flat top-hat beam profile, ensuring
           uniform and consistent energy delivery to the target area.
         </p>
         <div className="flex mt-10">
@@ -65,7 +65,7 @@ const Qmax = () => (
         <img className="h-full w-full " src={singlePulse} alt="" />
       </div>
       <p>
-        By employing the PTP mode, both Q10 and Q10 PREMIUM have the capability
+        By employing the PTP mode, both Q-MAX and Q-MAX PREMIUM have the capability
         to emit consecutive dual pulses at a maximum energy of 1.8 J. In
         contrast to the single-pulse mode, this configuration allows for the
         delivery of twice the number of pulses, each with nearly half the energy
