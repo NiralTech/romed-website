@@ -38,7 +38,7 @@ const Qmax = () => (
       </div>
       <div>
         <p>
-          Both Q10 and Q10 PREMIUM exhibit a flat top-hat beam profile, ensuring
+          Both Q-MAX and Q-MAX PREMIUM exhibit a flat top-hat beam profile, ensuring
           uniform and consistent energy delivery to the target area.
         </p>
         <div className="flex mt-10">
