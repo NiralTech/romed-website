@@ -10,7 +10,7 @@ const ProductLinks = () => {
     { route: "/smicool", title: "SMI COOL" },
     { route: "/qmax", title: "Q-MAX/Q-MAX PREMIUM" },
     { route: "/sonopoint", title: "SONOPOINT" },
-    // { route: "/inpure", title: "Inpure" },
+    { route: "/inpure", title: "Inpure" },
     { route: "/cryotwins", title: "CRYO-ZET & CRYO-Q" },
     { route: "/ds3000", title: "DS-3000E" },
     { route: "/pt4000", title: "PT-4000" },
