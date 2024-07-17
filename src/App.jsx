@@ -17,6 +17,7 @@ import Pt4000 from "./Pages/products/Pt4000";
 import Consumables from "./Pages/Consumables";
 import Tridi from "./Pages/products/Tridi";
 import Registration from "./Pages/Registration";
+import Inpure from "./Pages/products/Inpure";
 
 const App = () => {
   return (
@@ -38,6 +39,7 @@ const App = () => {
       <Route path="/titan" element={<Titan />} />
       <Route path="/pt4000" element={<Pt4000 />} />
       <Route path="/tridi" element={<Tridi />} />
+      <Route path="/inpure" element={<Inpure />} />
     </Routes>
   );
 };

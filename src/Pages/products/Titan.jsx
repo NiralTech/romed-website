@@ -71,7 +71,7 @@ const Titan = () => (
       </div>
     </div>
 
-    <div className="grid  md:mx-64 my-20 gap-4">
+    <div className="grid  md:mx-64 my-10 gap-4">
       <div>
         <h3 className="text-white text-4xl mb-6 uppercase text-center">
           Indication
@@ -79,85 +79,87 @@ const Titan = () => (
       </div>
 
       <div className="gap-2">
-        <img className="content-center" src={indication} alt="" />
+        <img className="w-full h-full" src={indication} alt="" />
       </div>
     </div>
 
-    <div className="grid grid-cols-2 md:mx-6 my-20">
-      <div className="col-span-2">
-        <h3 className="text-white text-4xl mb-6 uppercase text-center ">
-          Technical Specifications
-        </h3>
-      </div>
-      <div className="tb-col">LASER MEDIUM</div>
-      <div className="tb-col">CO2</div>
-      <div className="tb-col">WAVELENGTH</div>
-      <div className="tb-col">10,600 nm</div>
-      <div className="tb-col">GUIDE BEAM</div>
+    <div className="flex flex-col space-y-10 mb-10 md:mx-64">
+      <div className="grid grid-cols-2 md:mx-6">
+        <div className="col-span-2">
+          <h3 className="text-white text-4xl mb-6 uppercase text-center ">
+            Technical Specifications
+          </h3>
+        </div>
+        <div className="tb-col">LASER MEDIUM</div>
+        <div className="tb-col">CO2</div>
+        <div className="tb-col">WAVELENGTH</div>
+        <div className="tb-col">10,600 nm</div>
+        <div className="tb-col">GUIDE BEAM</div>
 
-      <div className="tb-col">650 nm &lt; 5mW</div>
-      <div className="tb-col">POWER</div>
-      <div className="tb-col">1-40 W</div>
-      <div className="tb-col">AIMING BEAM</div>
-      <div className="tb-col">Diode 650nm</div>
-      <div className="tb-col">COOLING</div>
-      <div className="tb-col">Air</div>
-      <div className="tb-col">DIMENSION (W’L’H)</div>
-      <div className="tb-col">440mm(W) X 480mm(L) X 1055mm(H)</div>
-      <div className="tb-col">WEIGHT</div>
-      <div className="tb-col">52Kg</div>
-    </div>
-
-    <div className="grid grid-cols-2 md:mx-6 my-20">
-      <div className="tb-col">HANDPIECES</div>
-      <div className="flex flex-col space-y-2 tb-col">
-        <span>50mm/ 100mm (Standard)</span>
-        <span>Dental/ ENT / (Optional)</span>
-      </div>
-      <div className="tb-col">OPERATION MODE</div>
-      <div className="flex flex-col space-y-2 tb-col">
-        <span>CW/Normal pulse/ Super pulse</span>
-        <span>Super pulse continuous/Ultra Pulse</span>
-        <span>Smart Protocol (general surgery/ dental surgery)</span>
-      </div>
-      <div className="tb-col">PULSE DURATION</div>
-      <div className="flex flex-col space-y-2 tb-col">
-        <span>Continuous 2-30ms</span>
-        <span>Ultra Pulse 90-900µs</span>
-        <span>Super pulse 1.0-4.0ms</span>
-        <span>Normal pulse 9-20ms</span>
-      </div>
-      <div className="tb-col">REPEAT TIME</div>
-      <div className="tb-col">
-        Off, 2/500ms adjustable, 5ms, 10ms, 30ms, 50ms, 70ms, 100ms, 250ms,
-        500ms
-      </div>
-    </div>
-
-    <div className="grid grid-cols-2 md:mx-6 my-20">
-      <div className="tb-col">BEAM MODE</div>
-      <div className="tb-col">Ultra pulse</div>
-      <div className="tb-col">DENSITY LEVEL</div>
-      <div className="tb-col">1-23 steps (x, y line);9-4489 dots</div>
-      <div className="tb-col">OPERATION MODE</div>
-      <div className="flex flex-col space-y-2 tb-col">
-        <span>Fractional mode</span>
-        <span>Low Pain Fractional mode</span>
+        <div className="tb-col">650 nm &lt; 5mW</div>
+        <div className="tb-col">POWER</div>
+        <div className="tb-col">1-40 W</div>
+        <div className="tb-col">AIMING BEAM</div>
+        <div className="tb-col">Diode 650nm</div>
+        <div className="tb-col">COOLING</div>
+        <div className="tb-col">Air</div>
+        <div className="tb-col">DIMENSION (W’L’H)</div>
+        <div className="tb-col">440mm(W) X 480mm(L) X 1055mm(H)</div>
+        <div className="tb-col">WEIGHT</div>
+        <div className="tb-col">52Kg</div>
       </div>
 
-      <div className="tb-col">BEAM PATTERN</div>
-      <div className="tb-col">Array, Grid, Random</div>
-      <div className="tb-col">BEAM SHAPE</div>
-      <div className="tb-col">Square, Triangle, Octagon, Circle</div>
-      <div className="tb-col">DEPTH LEVEL</div>
-      <div className="tb-col">1-5 steps</div>
-      <div className="tb-col">HANDPIECE</div>
-      <div className="flex flex-col space-y-2 tb-col">
-        <span>Fractional HP (Galvanic motor)</span>
-        <span>Vaginal Rejuvenation HP (Optional)</span>
+      <div className="grid grid-cols-2 md:mx-6">
+        <div className="tb-col">HANDPIECES</div>
+        <div className="flex flex-col space-y-2 tb-col">
+          <span>50mm/ 100mm (Standard)</span>
+          <span>Dental/ ENT / (Optional)</span>
+        </div>
+        <div className="tb-col">OPERATION MODE</div>
+        <div className="flex flex-col space-y-2 tb-col">
+          <span>CW/Normal pulse/ Super pulse</span>
+          <span>Super pulse continuous/Ultra Pulse</span>
+          <span>Smart Protocol (general surgery/ dental surgery)</span>
+        </div>
+        <div className="tb-col">PULSE DURATION</div>
+        <div className="flex flex-col space-y-2 tb-col">
+          <span>Continuous 2-30ms</span>
+          <span>Ultra Pulse 90-900µs</span>
+          <span>Super pulse 1.0-4.0ms</span>
+          <span>Normal pulse 9-20ms</span>
+        </div>
+        <div className="tb-col">REPEAT TIME</div>
+        <div className="tb-col">
+          Off, 2/500ms adjustable, 5ms, 10ms, 30ms, 50ms, 70ms, 100ms, 250ms,
+          500ms
+        </div>
       </div>
-      <div className="tb-col">REPEAT TIME</div>
-      <div className="tb-col">Off, 0.5, 1, 1.5, 2, 2.5 ms</div>
+
+      <div className="grid grid-cols-2 md:mx-6">
+        <div className="tb-col">BEAM MODE</div>
+        <div className="tb-col">Ultra pulse</div>
+        <div className="tb-col">DENSITY LEVEL</div>
+        <div className="tb-col">1-23 steps (x, y line);9-4489 dots</div>
+        <div className="tb-col">OPERATION MODE</div>
+        <div className="flex flex-col space-y-2 tb-col">
+          <span>Fractional mode</span>
+          <span>Low Pain Fractional mode</span>
+        </div>
+
+        <div className="tb-col">BEAM PATTERN</div>
+        <div className="tb-col">Array, Grid, Random</div>
+        <div className="tb-col">BEAM SHAPE</div>
+        <div className="tb-col">Square, Triangle, Octagon, Circle</div>
+        <div className="tb-col">DEPTH LEVEL</div>
+        <div className="tb-col">1-5 steps</div>
+        <div className="tb-col">HANDPIECE</div>
+        <div className="flex flex-col space-y-2 tb-col">
+          <span>Fractional HP (Galvanic motor)</span>
+          <span>Vaginal Rejuvenation HP (Optional)</span>
+        </div>
+        <div className="tb-col">REPEAT TIME</div>
+        <div className="tb-col">Off, 0.5, 1, 1.5, 2, 2.5 ms</div>
+      </div>
     </div>
   </GradientLayout>
 );
