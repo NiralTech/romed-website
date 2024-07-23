@@ -19,8 +19,8 @@ const ProductLinks = () => {
     <>
       <div className="font-normal uppercase px-3 lg:px-8 relative group opacity-100 -mb-2">
         <div className="font-normal cursor-pointer">Products</div>
-        <div className="bg-white space-x-3 w-full border-primary rounded absolute hidden group-hover:flex group-hover:flex-col md:group-hover:flex-row items-center p-2 top-6">
-          <div className="flex flex-col space-y-2">
+        <div className="bg-white space-x-3 w-[100vw] sm:w-auto border-primary rounded absolute hidden group-hover:flex group-hover:flex-col md:group-hover:flex-row items-center p-2 -left-28 sm:left-10 sm:top-6">
+          <div className="flex flex-col flex-wrap space-y-2">
             {routeMap.map((routeData) => {
               return (
                 <NavItem
@@ -39,7 +39,7 @@ const ProductLinks = () => {
 
 const NavItem = ({ title, route }) => (
   <NavLink
-    className="product-link-text"
+    className="product-link-text sm:w-auto"
     to={route}
     style={({ isActive }) => ({
       backgroundColor: !isActive ? "white" : "#532b7b",
