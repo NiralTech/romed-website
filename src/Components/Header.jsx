@@ -27,7 +27,7 @@ const Header = () => {
             <HeaderNavBar />
           </nav>
           {open ? (
-            <nav className="sm:hidden flex flex-col justify-around items-center bg-white w-full">
+            <nav className="sm:hidden flex flex-col justify-around items-center space-y-3 bg-white w-full">
               <HeaderNavBar />
             </nav>
           ) : (
@@ -61,7 +61,7 @@ const HeaderLogo = ({ logo, logoLabel, navClicked }) => {
   };
 
   return (
-    <div className="flex justify-between w-full items-center p-2 ">
+    <div className="flex justify-between w-full sm:w-auto items-center p-2 ">
       <div className="flex md:mb-0">
         <div className="">
           <img className="h-10 w-50" src={logo} alt="" />
