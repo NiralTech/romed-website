@@ -69,7 +69,7 @@ const Footer = () => {
         href="https://api.whatsapp.com/send?phone=9663377055"
         target="_blank"
       >
-        <FaWhatsapp size={"3.5em"} className="cursor-pointer text-accent bg-white rounded-full" />
+        <FaWhatsapp size={"3.5em"} className="cursor-pointer text-accent " />
       </a>
     </>
   );
